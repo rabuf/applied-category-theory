@@ -1,3 +1,5 @@
 {
-    "plugins": ["mathjax"]
+    "plugins": ["mathjax"],
+    "title"  : "Applied Category Theory",
+    "author" : "John Baez"
 }
