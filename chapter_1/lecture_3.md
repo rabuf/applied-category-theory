@@ -1,3 +1,6 @@
+# Lecture 3 - Posets
+---------
+
 Okay, let's get started!
 
 Fong and Spivak start out by explaining **posets**, which is short for
@@ -28,7 +31,7 @@ playing on you here.  Why in the world should a book on applied
 category theory start by discussing preorders?  Why not start by
 discussing _categories?_
 
-The answer: a preorder is a specially simple kind of category.  A
+The answer: a preorder is an especially simple kind of category.  A
 category, as you may have heard, has a bunch of 'objects'
 \\(x,y,z,\dots\\) and 'morphisms' between them.  A morphism from
 \\(x\\) to \\(y\\) is written \\(f : x \to y\\).  You can 'compose' a
