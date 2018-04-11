@@ -102,21 +102,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" >
-            
-                <span>
-            
-                    
-                    Chapter 1
-            
-                </span>
-            
 
-            
-            <ul class="articles">
-                
     
-        <li class="chapter " data-level="1.2.1" data-path="lecture_1.html">
+        
+        <li class="header">Chapter 1</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="lecture_1.html">
             
                 <a href="lecture_1.html">
             
@@ -129,7 +122,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="lecture_2.html">
+        <li class="chapter " data-level="2.2" data-path="lecture_2.html">
             
                 <a href="lecture_2.html">
             
@@ -142,7 +135,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="lecture_3.html">
+        <li class="chapter " data-level="2.3" data-path="lecture_3.html">
             
                 <a href="lecture_3.html">
             
@@ -155,7 +148,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="lecture_4.html">
+        <li class="chapter " data-level="2.4" data-path="lecture_4.html">
             
                 <a href="lecture_4.html">
             
@@ -168,7 +161,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="lecture_5.html">
+        <li class="chapter " data-level="2.5" data-path="lecture_5.html">
             
                 <a href="lecture_5.html">
             
@@ -181,7 +174,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="lecture_6.html">
+        <li class="chapter " data-level="2.6" data-path="lecture_6.html">
             
                 <a href="lecture_6.html">
             
@@ -194,7 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="lecture_7.html">
+        <li class="chapter " data-level="2.7" data-path="lecture_7.html">
             
                 <a href="lecture_7.html">
             
@@ -207,7 +200,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.8" data-path="lecture_8.html">
+        <li class="chapter active" data-level="2.8" data-path="lecture_8.html">
             
                 <a href="lecture_8.html">
             
@@ -220,7 +213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="lecture_9.html">
+        <li class="chapter " data-level="2.9" data-path="lecture_9.html">
             
                 <a href="lecture_9.html">
             
@@ -233,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.10" data-path="lecture_10.html">
+        <li class="chapter " data-level="2.10" data-path="lecture_10.html">
             
                 <a href="lecture_10.html">
             
@@ -246,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11" data-path="lecture_11.html">
+        <li class="chapter " data-level="2.11" data-path="lecture_11.html">
             
                 <a href="lecture_11.html">
             
@@ -256,11 +249,6 @@
                 </a>
             
 
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -309,7 +297,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>I&apos;d like to tell you about two kinds of logic.   In both, we start with a set \( X \) of &quot;ways the world can be&quot; and build a set of statements about the world, also known as &quot;propositions&quot;.   In the first, propositions correspond to subsets of \( X \).  In the second, propositions correspond to partitions of \( X \).  In both approaches we get a <em>poset</em> of propositions where the partial order is &quot;implication&quot;, written \( \implies \).    </p>
+                                <h1 id="lecture-8---the-logic-of-subsets">Lecture 8 - The Logic of Subsets</h1>
+<hr>
+<p>I&apos;d like to tell you about two kinds of logic.   In both, we start with a set \( X \) of &quot;ways the world can be&quot; and build a set of statements about the world, also known as &quot;propositions&quot;.   In the first, propositions correspond to subsets of \( X \).  In the second, propositions correspond to partitions of \( X \).  In both approaches we get a <em>poset</em> of propositions where the partial order is &quot;implication&quot;, written \( \implies \).    </p>
 <p>The first kind of logic is very familiar.  We could call it &quot;subset logic&quot;, but it&apos;s part of what people usually call &quot;<a href="https://en.wikipedia.org/wiki/Classical_logic" target="_blank">classical logic</a>&quot;.  This is the sort of logic we learn in school, assuming we learn any at all.    The second kind of logic is less well known: it&apos;s called &quot;<a href="https://arxiv.org/abs/0902.1950" target="_blank">partition logic</a>&quot;.   Interestingly, Fong and Spivak spend more time on the second kind.  </p>
 <p>I&apos;ll start by talking about the first kind.   </p>
 <p>Most of us learn the relation between propositions and subsets, at least implicitly, when we meet <a href="https://en.wikipedia.org/wiki/Venn_diagram" target="_blank">Venn diagrams</a>:</p>
@@ -350,6 +340,7 @@
 <p>Next time, I&apos;ll show you this monotone map has both a left and a right adjoint!  And these turn out to be connected to the logical concepts of &quot;there exists&quot; and &quot;for all&quot;.   I believe this was first discovered by the great category theorist <a href="https://www.emis.de/journals/TAC/reprints/articles/16/tr16abs.html" target="_blank">Bill Lawvere</a>.</p>
 <p>So you see, I haven&apos;t given up talking about left and right adjoints.  I&apos;m really just getting ready to explain how they show up in logic: first in good old classical &quot;subset logic&quot;, and then in the weird new &quot;partition logic&quot;.</p>
 <p><strong><a href="http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course" target="_blank">To read other lectures go here.</a></strong></p>
+<p><a href="https://forum.azimuthproject.org/discussion/1921/lecture-8-chapter-1-the-logic-of-subsets/p1" target="_blank">Click here to read the original discussion.</a></p>
 
                                 
                                 </section>
@@ -393,7 +384,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 8 - The Logic of Subsets","level":"1.2.8","depth":2,"next":{"title":"Lecture 9 - Adjoints and the Logic of Subsets","level":"1.2.9","depth":2,"path":"chapter_1/lecture_9.md","ref":"chapter_1/lecture_9.md","articles":[]},"previous":{"title":"Lecture 7 - Logic","level":"1.2.7","depth":2,"path":"chapter_1/lecture_7.md","ref":"chapter_1/lecture_7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_1/lecture_8.md","mtime":"2018-04-11T11:09:04.720Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T11:13:22.748Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 8 - The Logic of Subsets","level":"2.8","depth":1,"next":{"title":"Lecture 9 - Adjoints and the Logic of Subsets","level":"2.9","depth":1,"path":"chapter_1/lecture_9.md","ref":"chapter_1/lecture_9.md","articles":[]},"previous":{"title":"Lecture 7 - Logic","level":"2.7","depth":1,"path":"chapter_1/lecture_7.md","ref":"chapter_1/lecture_7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_1/lecture_8.md","mtime":"2018-04-11T20:24:29.838Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T20:29:18.527Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -102,21 +102,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" >
-            
-                <span>
-            
-                    
-                    Chapter 1
-            
-                </span>
-            
 
-            
-            <ul class="articles">
-                
     
-        <li class="chapter " data-level="1.2.1" data-path="lecture_1.html">
+        
+        <li class="header">Chapter 1</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="lecture_1.html">
             
                 <a href="lecture_1.html">
             
@@ -129,7 +122,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="lecture_2.html">
+        <li class="chapter " data-level="2.2" data-path="lecture_2.html">
             
                 <a href="lecture_2.html">
             
@@ -142,7 +135,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="lecture_3.html">
+        <li class="chapter " data-level="2.3" data-path="lecture_3.html">
             
                 <a href="lecture_3.html">
             
@@ -155,7 +148,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="lecture_4.html">
+        <li class="chapter " data-level="2.4" data-path="lecture_4.html">
             
                 <a href="lecture_4.html">
             
@@ -168,7 +161,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="lecture_5.html">
+        <li class="chapter " data-level="2.5" data-path="lecture_5.html">
             
                 <a href="lecture_5.html">
             
@@ -181,7 +174,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.6" data-path="lecture_6.html">
+        <li class="chapter active" data-level="2.6" data-path="lecture_6.html">
             
                 <a href="lecture_6.html">
             
@@ -194,7 +187,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="lecture_7.html">
+        <li class="chapter " data-level="2.7" data-path="lecture_7.html">
             
                 <a href="lecture_7.html">
             
@@ -207,7 +200,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.8" data-path="lecture_8.html">
+        <li class="chapter " data-level="2.8" data-path="lecture_8.html">
             
                 <a href="lecture_8.html">
             
@@ -220,7 +213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="lecture_9.html">
+        <li class="chapter " data-level="2.9" data-path="lecture_9.html">
             
                 <a href="lecture_9.html">
             
@@ -233,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.10" data-path="lecture_10.html">
+        <li class="chapter " data-level="2.10" data-path="lecture_10.html">
             
                 <a href="lecture_10.html">
             
@@ -246,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.11" data-path="lecture_11.html">
+        <li class="chapter " data-level="2.11" data-path="lecture_11.html">
             
                 <a href="lecture_11.html">
             
@@ -256,11 +249,6 @@
                 </a>
             
 
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -309,29 +297,37 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>I&apos;ve already said that left and right adjoints give <em>the best
+                                <h1 id="lecture-6---computing-adjoints">Lecture 6 - Computing Adjoints</h1>
+<hr>
+<p>I&apos;ve already said that left and right adjoints give <em>the best
 approximate ways to solve a problem that has no solution</em>, namely
 finding the inverse of a monotone function that has no inverse. I&apos;ve
 defined them and given you some puzzles about them. But now let&apos;s
 review these puzzles and extract some valuable lessons!</p>
 <p>We took the function \(f : \mathbb{N} \to \mathbb{N}\) that doubles
 any natural number</p>
-<p><script type="math/tex; ">     f(a) = 2a .</script></p>
+<center><script type="math/tex; ">f(a) = 2a .</script></center>
+
 <p>This function has no inverse, since you can&apos;t divide an odd number by
 2 and get a natural number! But if you did the puzzles, you saw that
 \(f\) has a &quot;right adjoint&quot; \(g : \mathbb{N} \to \mathbb{N}\).
 This is defined by the property</p>
-<p><script type="math/tex; ">   f(a) \le b \textrm{ if and only if } a \le g(b) . </script></p>
+<center><script type="math/tex; ">   f(a) \le b \textrm{ if and only if } a \le g(b) . </script></center>
+
 <p>or in other words,</p>
-<p><script type="math/tex; "> 2a \le b \textrm{ if and only if } a \le g(b) .</script></p>
+<center><script type="math/tex; "> 2a \le b \textrm{ if and only if } a \le g(b) .</script></center>
+
 <p>Using our knowledge of fractions, we have</p>
-<p><script type="math/tex; ">  2a \le b \textrm{ if and only if }  a \le b/2 </script></p>
+<center><script type="math/tex; ">  2a \le b \textrm{ if and only if }  a \le b/2 </script></center>
+
 <p>but since \(a\) is a natural number, this implies</p>
-<p><script type="math/tex; ">  2a \le b \textrm{ if and only if }  a \le \lfloor b/2 \rfloor </script></p>
+<center><script type="math/tex; ">  2a \le b \textrm{ if and only if }  a \le \lfloor b/2 \rfloor </script></center>
+
 <p>where we are using the <a href="https://en.wikipedia.org/wiki/Floor_and_ceiling_functions" target="_blank">floor
 function</a>
 to pick out the largest integer \(\le b/2\). So,</p>
-<p><script type="math/tex; ">  g(b) = \lfloor b/2 \rfloor.  </script></p>
+<center><script type="math/tex; ">  g(b) = \lfloor b/2 \rfloor.  </script></center>
+
 <p>Moral: the right adjoint \(g\) is the &quot;best approximation from
 below&quot; to the nonexistent inverse of \(f\).</p>
 <p>If you did the puzzles, you also saw that \(f\) has a left adjoint!
@@ -356,7 +352,8 @@ starting from the basic definition.</p>
 \((A,\le_A)\) and \((B,\le_B)\) and a monotone function \(f : A
 \to B\).  Then we say a monotone function \(g: B \to A\) is a
 <strong>right adjoint of \(f\)</strong> if</p>
-<p><script type="math/tex; ">  f(a) \le_B b  \textrm{ if and only if } a \le_A g(b) </script></p>
+<center><script type="math/tex; ">  f(a) \le_B b  \textrm{ if and only if } a \le_A g(b) </script></center>
+
 <p>for all \(a \in A\) and \(b \in B\). In this situation we also say
 that \(f\) is a <strong>left adjoint of \(g\)</strong>.</p>
 <p>The names should be easy to remember, since \(f\) shows up on the
@@ -366,25 +363,50 @@ how they actually work!</p>
 <p>Suppose you know \(f : A \to B\) and you&apos;re trying to figure out its
 right adjoint \(g: B \to A\). Say you&apos;re trying to figure out
 \(g(b)\). You don&apos;t know what it is, but you know</p>
-<p><script type="math/tex; ">  f(a) \le_B b  \textrm{ if and only if } a \le_A g(b) </script></p>
-<p>So, you go around looking at choices of \(a \in A\).   For each one you compute \(f(a)\).  If \(f(a) \le_B b\), then you know \(a \le_A g(b)\).  So, you need to choose \(g(b)\) to be greater than or equal to every element of this set:</p>
-<p><script type="math/tex; ">   \{a  \in A : \; f(a) \le_B b  \}  </script></p>
-<p>In other words, \(g(b)\) must be an <strong><a href="https://en.wikipedia.org/wiki/Upper_and_lower_bounds" target="_blank">upper bound</a></strong> of this set.    But you shou&apos;ldn&apos;t choose \(g(b)\) to be any bigger that it needs to be!  After all, you know \(a \le<em>A g(b)\) _only if</em> \(f(a) \le_B b\).  So,
-\(g(b)\) must be a <strong><a href="https://en.wikipedia.org/wiki/Infimum_and_supremum" target="_blank">least upper bound</a></strong> of the above set.</p>
-<p>Note that I&apos;m carefully speaking about <em>a</em> least upper bound.   Our set could have two different least upper bounds, say \(a\) and \(a&apos;\).  Since they&apos;re both the least, we must have \(a \le a&apos;\) and \(a&apos; \le a\).   This doesn&apos;t imply \(a = a&apos;\), in general!  But it does if our preorder \(A\) is a &quot;poset&quot;.   A <strong>poset</strong> is a preorder \((A, \le_A)\) obeying this extra axiom:</p>
-<p><script type="math/tex; ">  \textrm{ if } a \le a'  \textrm{ and } a' \le a \textrm{ then } a = a' </script></p>
+<center><script type="math/tex; ">  f(a) \le_B b  \textrm{ if and only if } a \le_A g(b) </script></center>
+
+<p>So, you go around looking at choices of \(a \in A\).  For each one
+you compute \(f(a)\).  If \(f(a) \le_B b\), then you know \(a
+\le_A g(b)\).  So, you need to choose \(g(b)\) to be greater than
+or equal to every element of this set:</p>
+<center><script type="math/tex; ">   \{a  \in A : \; f(a) \le_B b  \}  </script></center>
+
+<p>In other words, \(g(b)\) must be an <strong><a href="https://en.wikipedia.org/wiki/Upper_and_lower_bounds" target="_blank">upper
+bound</a></strong> of this
+set.  But you shouldn&apos;t choose \(g(b)\) to be any bigger than it
+needs to be! After all, you know \(a \le<em>A g(b)\) _only if</em> \(f(a)
+\le_B b\). So, \(g(b)\) must be a <strong><a href="https://en.wikipedia.org/wiki/Infimum_and_supremum" target="_blank">least upper
+bound</a></strong> of the
+above set.</p>
+<p>Note that I&apos;m carefully speaking about <em>a</em> least upper bound. Our set
+could have two different least upper bounds, say \(a\) and \(a&apos;\).
+Since they&apos;re both the least, we must have \(a \le a&apos;\) and \(a&apos;
+\le a\). This doesn&apos;t imply \(a = a&apos;\), in general! But it does if
+our preorder \(A\) is a &quot;poset&quot;. A <strong>poset</strong> is a preorder \((A,
+\le_A)\) obeying this extra axiom:</p>
+<center><script type="math/tex; ">  \textrm{ if } a \le a'  \textrm{ and } a' \le a \textrm{ then } a = a' </script></center>
+
 <p>for all \(a,a&apos; \in A\).</p>
-<p>In a poset, our desired least upper bound may still not <em>exist</em>.  But if it does, it&apos;s <em>unique</em>, and Fong and Spivak write it this way:</p>
-<p><script type="math/tex; ">  \bigvee \{a  \in A : \; f(a) \le_B b  \}  </script></p>
-<p>The \(\bigvee\) symbol stands for &quot;least upper bound&quot;, also known as <strong>supremum</strong> or <strong>join</strong>.</p>
+<p>In a poset, our desired least upper bound may still not <em>exist</em>. But
+if it does, it&apos;s <em>unique</em>, and Fong and Spivak write it this way:</p>
+<center><script type="math/tex; ">  \bigvee \{a  \in A : \; f(a) \le_B b  \}  </script></center>
+
+<p>The \(\bigvee\) symbol stands for &quot;least upper bound&quot;, also known as
+<strong>supremum</strong> or <strong>join</strong>.</p>
 <p>So, here&apos;s what we&apos;ve shown:</p>
-<p>If \(f : A \to B\) has a right adjoint \(g : B \to A\) and \(A\) is a poset, this right adjoint is unique and we have a formula for it:</p>
-<p><script type="math/tex; ">  g(b) =  \bigvee \{a  \in A : \; f(a) \le_B b  \} . </script></p>
+<p>If \(f : A \to B\) has a right adjoint \(g : B \to A\) and \(A\)
+is a poset, this right adjoint is unique and we have a formula for it:</p>
+<center><script type="math/tex; ">  g(b) =  \bigvee \{a  \in A : \; f(a) \le_B b  \} . </script></center>
+
 <p>And we can copy our whole line of reasoning and show this:</p>
-<p>If \(g : B \to A\) has a left adjoint \(f : A \to B\) and \(B\) is a poset, this left adjoint is unique and we have a formula for it:</p>
-<p><script type="math/tex; ">  f(a) =  \bigwedge \{b  \in B : \; a \le_A g(b)   \}  .</script></p>
-<p>Here the \(\bigwedge\) symbol stands for &quot;greatest lower bound&quot;, also known as the <strong>infimum</strong> or <strong>meet</strong>.</p>
-<p>We&apos;re making progress: we can now actually compute left and right adjoints!   Next we&apos;ll start looking at more examples.</p>
+<p>If \(g : B \to A\) has a left adjoint \(f : A \to B\) and \(B\)
+is a poset, this left adjoint is unique and we have a formula for it:</p>
+<center><script type="math/tex; ">  f(a) =  \bigwedge \{b  \in B : \; a \le_A g(b)   \}  .</script></center>
+
+<p>Here the \(\bigwedge\) symbol stands for &quot;greatest lower bound&quot;,
+also known as the <strong>infimum</strong> or <strong>meet</strong>.</p>
+<p>We&apos;re making progress: we can now actually compute left and right
+adjoints! Next we&apos;ll start looking at more examples.</p>
 <p><a href="https://forum.azimuthproject.org/discussion/1901/lecture-6-chapter-1-computing-adjoints/p1" target="_blank">Click here to read the original discussion.</a></p>
 
                                 
@@ -429,7 +451,7 @@ right adjoint \(g: B \to A\). Say you&apos;re trying to figure out
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 6 - Computing Adjoints","level":"1.2.6","depth":2,"next":{"title":"Lecture 7 - Logic","level":"1.2.7","depth":2,"path":"chapter_1/lecture_7.md","ref":"chapter_1/lecture_7.md","articles":[]},"previous":{"title":"Lecture 5 - Galois Connections","level":"1.2.5","depth":2,"path":"chapter_1/lecture_5.md","ref":"chapter_1/lecture_5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_1/lecture_6.md","mtime":"2018-04-11T11:09:04.719Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T11:13:22.748Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 6 - Computing Adjoints","level":"2.6","depth":1,"next":{"title":"Lecture 7 - Logic","level":"2.7","depth":1,"path":"chapter_1/lecture_7.md","ref":"chapter_1/lecture_7.md","articles":[]},"previous":{"title":"Lecture 5 - Galois Connections","level":"2.5","depth":1,"path":"chapter_1/lecture_5.md","ref":"chapter_1/lecture_5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_1/lecture_6.md","mtime":"2018-04-11T20:21:30.969Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T20:29:18.527Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
