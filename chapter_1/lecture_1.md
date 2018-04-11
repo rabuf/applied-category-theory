@@ -1,6 +1,8 @@
+# Lecture 1 - Introduction
+-----------------------
 Welcome to the **[Applied Category Theory Course](https://forum.azimuthproject.org/discussion/1717/welcome-to-the-applied-category-theory-course)!**  You can register at left using your full real name as username.
 
-I haven't carefully counted, but so far about 150 of you have registered, and I see 27 more applicants whom I haven't gotten around to approving.  A bunch of you have written self-introductions; I haven't gotten around to responding to all these yet either - but it's obvious we've got a formidable team here.  If we work together we can do amazing things.  
+I haven't carefully counted, but so far about 150 of you have registered, and I see 27 more applicants whom I haven't gotten around to approving.  A bunch of you have written self-introductions; I haven't gotten around to responding to all these yet either - but it's obvious we've got a formidable team here.  If we work together we can do amazing things. 
 
 I decided to teach an online course because I was getting bored of the superficial engagement I'd been getting on my social media posts, mainly on [Google+](https://plus.google.com/u/0/+johncbaez999), which started out great but has been going downhill.   I like to explain things, discuss things and learn things by talking to people.   I've been doing this for decades, first on [sci.physics.research](https://golem.ph.utexas.edu/category/), and later on the [n-Category Caf&eacute;](https://golem.ph.utexas.edu/category/), the [Azimuth blog](https://johncarlosbaez.wordpress.com/)... and the [Azimuth Forum](https://forum.azimuthproject.org/discussions) here, which began life as a platform for creating a wiki about environmental issues: the [Azimuth Wiki](http://www.azimuthproject.org/azimuth/show/HomePage).  All these fora were great fun, but it seems each one gets a bit stale after a while, so it's time for something new.
 
@@ -12,9 +14,9 @@ Our course will be based on this book.   I'll give "lectures" on it - in print, 
 
 I will try to write a short lecture every day or so, sometimes more than one.  But sometimes I'll be busy: most notably, from April 23rd to May 5th, Brendan, David and I will be in the Netherlands at [Applied Category Theory 2018](https://johncarlosbaez.wordpress.com/2017/09/12/act-2018/), along with 60 other people, and things will get very hectic.   Expect a slowdown or complete silence then.  With luck you can watch videos.
 
-We should do all the Exercises in the book.   I hope some of you volunteer to copy these exercises over to the Forum, one at a time, so we can talk about them here.  I'll get the game started but I can't do everything.
+We should do all the exercises in the book. I hope some of you volunteer to copy these exercises over to the Forum, one at a time, so we can talk about them here.  I'll get the game started but I can't do everything.
 
-I will also pose Puzzles.   In fact I've [already started](https://forum.azimuthproject.org/discussion/comment/15878/#Comment_15878)!
+I will also pose Puzzles. In fact I've [already started](https://forum.azimuthproject.org/discussion/comment/15878/#Comment_15878)!
 
 So, your job is to read the book, ask questions, try to do the Exercises and Puzzles, write your answers here - and most importantly, discuss everything to death!   There will be a place to discuss each Chapter, and a place to discuss each Lecture and these discussions can go on indefinitely.   
 
@@ -24,7 +26,7 @@ With luck, we'll all learn a lot of stuff, make a lot of new friends... and some
 
 **Getting to Know Each Other**
 
-If you're new to the Azimuth Forum, please post a comment about your interests and background in the category [Chat](https://forum.azimuthproject.org/categories/Chat).      A lot of you have already done this.   So, go read some - and reply to at least one!  Pick one that hasn't gotten any replies yet.  I want to go through them all and reply to every one, but it will take me a while.  If you get to know some other people in the course, it'll be a lot more fun.
+If you're new to the Azimuth Forum, please post a comment about your interests and background in the category [Chat](https://forum.azimuthproject.org/categories/Chat). A lot of you have already done this. So, go read some - and reply to at least one!  Pick one that hasn't gotten any replies yet.  I want to go through them all and reply to every one, but it will take me a while.  If you get to know some other people in the course, it'll be a lot more fun.
 
 I'd like to keep the discussions on Chapters (of the book) and Lectures (like this) fairly focused.  There is always conversation drift, and some of that is okay, but if you start wanting to talk about algebraic geometry or sky-diving or something else that's not really about the course, please take it to [Chat](https://forum.azimuthproject.org/categories/Chat).  That's a good place for free-wheeling discussions.   
 
@@ -38,7 +40,11 @@ You can discuss my Lectures by posting a comment on _its_ thread.  If you have q
 
 **Writing math** 
 
-You can write equations using [MathJax](http://docs.mathjax.org/en/latest/start.html), which is a limited version of LaTeX good for the web.  For "displayed" equations, centered on the page, use double dollar signs: `$$E = \sqrt{m^2 + p^2}$$` produces this: $$E = \sqrt{m^2 + p^2}$$   For "inline" equations, mixed in with your text, use this other method: `\\(E = \sqrt{m^2 + p^2}\\)` produces this: \\(E = \sqrt{m^2 + p^2}\\).  If you don't know anything about LaTeX, you can look at the source code of other people's comments and see how they're doing stuff.
+You can write equations using [MathJax](http://docs.mathjax.org/en/latest/start.html), which is a limited version of LaTeX good for the web.  For "displayed" equations, centered on the page, use double dollar signs: `$$E = \sqrt{m^2 + p^2}$$` produces this: 
+
+$$E = \sqrt{m^2 + p^2}$$   
+
+For "inline" equations, mixed in with your text, use this other method: `\\(E = \sqrt{m^2 + p^2}\\)` produces this: \\(E = \sqrt{m^2 + p^2}\\).  If you don't know anything about LaTeX, you can look at the source code of other people's comments and see how they're doing stuff.
 
 **Resources**
 
