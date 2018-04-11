@@ -40,7 +40,11 @@ You can discuss my Lectures by posting a comment on _its_ thread.  If you have q
 
 **Writing math** 
 
-You can write equations using [MathJax](http://docs.mathjax.org/en/latest/start.html), which is a limited version of LaTeX good for the web.  For "displayed" equations, centered on the page, use double dollar signs: `$$E = \sqrt{m^2 + p^2}$$` produces this: $$E = \sqrt{m^2 + p^2}$$   For "inline" equations, mixed in with your text, use this other method: `\\(E = \sqrt{m^2 + p^2}\\)` produces this: \\(E = \sqrt{m^2 + p^2}\\).  If you don't know anything about LaTeX, you can look at the source code of other people's comments and see how they're doing stuff.
+You can write equations using [MathJax](http://docs.mathjax.org/en/latest/start.html), which is a limited version of LaTeX good for the web.  For "displayed" equations, centered on the page, use double dollar signs: `$$E = \sqrt{m^2 + p^2}$$` produces this: 
+
+$$E = \sqrt{m^2 + p^2}$$   
+
+For "inline" equations, mixed in with your text, use this other method: `\\(E = \sqrt{m^2 + p^2}\\)` produces this: \\(E = \sqrt{m^2 + p^2}\\).  If you don't know anything about LaTeX, you can look at the source code of other people's comments and see how they're doing stuff.
 
 **Resources**
 
