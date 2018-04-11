@@ -4,11 +4,11 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Lecture 7 - Logic · GitBook</title>
+        <title>Lecture 7 - Logic · Applied Category Theory</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
-        
+        <meta name="author" content="John Baez">
         
         
     
@@ -312,24 +312,67 @@
                                 
                                 <h1 id="lecture-7---logic">Lecture 7 - Logic</h1>
 <hr>
-<p>So far the only <em>examples</em> of posets I&apos;ve talked about in the lectures are the real numbers \(\mathbb{R}\) and the natural numbers \(\mathbb{N}\) with their usual order \(\le\).  Of course every natural number is a real number, so there&apos;s a function</p>
-<p><script type="math/tex; ">   i : \mathbb{N} \to \mathbb{R} </script></p>
-<p>sending any natural number \(x \in \mathbb{N}\) to the exact same number regarded as a real number.  This function is monotone, so you now know instinctively to ask this question:</p>
-<p><strong>Puzzle 21.</strong> Does the monotone function \(i : \mathbb{N} \to \mathbb{R}\) have a left adjoint?  Does it have a right adjoint?  If so, what are they?</p>
-<p>This is nice, but we need to look at other examples to appreciate the diversity of posets.  Both  \(\mathbb{N}\) and \(\mathbb{Z}\) have a very special property.   They are <strong><a href="https://en.wikipedia.org/wiki/Total_order" target="_blank">totally ordered sets</a></strong>: posets such that</p>
-<p><script type="math/tex; ">   \textrm{ for all } x, y,  \textrm{ either } x \le y \textrm{ or } y \le x . </script></p>
-<p>If you want to show off, you can call totally ordered sets <strong>tosets</strong>.   They&apos;re also called <strong>linearly ordered</strong>, because you can imagine them as lines:</p>
+<p>So far the only <em>examples</em> of posets I&apos;ve talked about in the lectures
+are the real numbers \(\mathbb{R}\) and the natural numbers
+\(\mathbb{N}\) with their usual order \(\le\). Of course every
+natural number is a real number, so there&apos;s a function</p>
+<center><script type="math/tex; ">i : \mathbb{N} \to \mathbb{R}</script></center>
+
+<p>sending any natural number \(x \in \mathbb{N}\) to the exact same
+number regarded as a real number. This function is monotone, so you
+now know instinctively to ask this question:</p>
+<p><strong>Puzzle 21.</strong> Does the monotone function \(i : \mathbb{N} \to
+\mathbb{R}\) have a left adjoint? Does it have a right adjoint? If
+so, what are they?</p>
+<p>This is nice, but we need to look at other examples to appreciate the
+diversity of posets. Both \(\mathbb{N}\) and \(\mathbb{Z}\) have a
+very special property. They are <strong><a href="https://en.wikipedia.org/wiki/Total_order" target="_blank">totally ordered
+sets</a></strong>: posets such that</p>
+<center><script type="math/tex; ">\textrm{ for all } x, y,  \textrm{ either } x \le y \textrm{ or } y \le x .</script></center>
+
+<p>If you want to show off, you can call totally ordered sets <strong>tosets</strong>.
+They&apos;re also called <strong>linearly ordered</strong>, because you can imagine them
+as lines:</p>
 <center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/natural_numbers_hasse_diagram.png"></center>
 
-<p>Totally ordered sets are limiting.   Suppose you&apos;re trying to order foods on a restaurant menu based on how much you like them.   What&apos;s better: a cheese sandwich or a pancake?   There may be no answer, because you like them in <em>different ways</em>.   To get a totally ordered set you have to ignore this and arrange all the foods in a line.   </p>
-<p>In standard economics we <em>do</em> try to arrange everything in a line.  We measure the worth of everything in real numbers: numbers of <em>dollars</em>.   There&apos;s even a theorem to justify this, proved by <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem" target="_blank">von Neumann and Morgenstern</a>.  But the assumptions of this theorem don&apos;t hold in real life.  It&apos;s mainly just <em>convenient</em> to measure value, or &quot;utility&quot;, in real numbers.  With computer technologies we could set up cryptocurrencies based on other posets.  But will we?</p>
-<p>Luckily, human thought as a whole is not limited to total orders.  A good example is logic.  Logic, in its simplest form, is about statements \(P, Q, R, \dots \) and whether one statement implies another.  If \(P\) implies \(Q\) we often write \(P \implies Q\).    There are many kinds of logic, but every kind I know, this relation \(\implies\)  makes statements into a preorder, since we have</p>
-<p>1)  reflexivity: \(P \implies P\)</p>
-<p>2)  transitivity: if \(P \implies Q\) and \( Q \implies R \) then \(P \implies R\).</p>
+<p>Totally ordered sets are limiting. Suppose you&apos;re trying to order
+foods on a restaurant menu based on how much you like them. What&apos;s
+better: a cheese sandwich or a pancake? There may be no answer,
+because you like them in <em>different ways</em>. To get a totally ordered
+set you have to ignore this and arrange all the foods in a line.</p>
+<p>In standard economics we <em>do</em> try to arrange everything in a line. We
+measure the worth of everything in real numbers: numbers of <em>dollars</em>.
+There&apos;s even a theorem to justify this, proved by <a href="https://en.wikipedia.org/wiki/Von_Neumann%E2%80%93Morgenstern_utility_theorem" target="_blank">von Neumann and
+Morgenstern</a>.
+But the assumptions of this theorem don&apos;t hold in real life. It&apos;s
+mainly just <em>convenient</em> to measure value, or &quot;utility&quot;, in real
+numbers. With computer technologies we could set up cryptocurrencies
+based on other posets. But will we?</p>
+<p>Luckily, human thought as a whole is not limited to total orders. A
+good example is logic. Logic, in its simplest form, is about
+statements \(P, Q, R, \dots \) and whether one statement implies
+another. If \(P\) implies \(Q\) we often write \(P \implies
+Q\). There are many kinds of logic, but every kind I know, this
+relation \(\implies\) makes statements into a preorder, since we
+have</p>
+<p>1) reflexivity: \(P \implies P\)</p>
+<p>2) transitivity: if \(P \implies Q\) and \( Q \implies R \) then
+\(P \implies R\).</p>
 <p>Often people make this preorder into a poset by imposing this rule:</p>
-<p>3) antisymmetry: if \(P \implies Q\) and \(Q \implies P\) then \(P = Q \).</p>
-<p>This amounts to decreeing that we count two statements as &quot;the same&quot; if they both imply each other.  We may not always want to do this.    And we certainly don&apos;t want a linear order: it&apos;s easy to find examples of statements such that neither \( P \implies Q\) nor \(Q \implies P\), like &quot;I am a millionaire&quot; and &quot;I am happy&quot;, or &quot;I like this food for breakfast&quot; and &quot;I like this food for lunch&quot;.</p>
-<p>So, to continue our study of preorders, posets, monotone functions and Galois connections, we&apos;ll turn to logic!  Category-theoretic logic is an enormous wonderful field, but we&apos;ll just do a bit of logic based on the poset of subsets of a set, followed by a bit of logic based on the poset of partitions of a set.   The latter underlies Fong and Spivak&apos;s discussion of &quot;generative effects&quot; in Chapter 1.</p>
+<p>3) antisymmetry: if \(P \implies Q\) and \(Q \implies P\) then
+\(P = Q \).</p>
+<p>This amounts to decreeing that we count two statements as &quot;the same&quot;
+if they both imply each other. We may not always want to do this.
+And we certainly don&apos;t want a linear order: it&apos;s easy to find examples
+of statements such that neither \( P \implies Q\) nor \(Q \implies
+P\), like &quot;I am a millionaire&quot; and &quot;I am happy&quot;, or &quot;I like this food
+for breakfast&quot; and &quot;I like this food for lunch&quot;.</p>
+<p>So, to continue our study of preorders, posets, monotone functions and
+Galois connections, we&apos;ll turn to logic! Category-theoretic logic is
+an enormous wonderful field, but we&apos;ll just do a bit of logic based on
+the poset of subsets of a set, followed by a bit of logic based on the
+poset of partitions of a set. The latter underlies Fong and Spivak&apos;s
+discussion of &quot;generative effects&quot; in Chapter 1.</p>
 <p><a href="https://forum.azimuthproject.org/discussion/1909/lecture-7-chapter-1-logic/p1" target="_blank">Click here to read the original discussion.</a></p>
 
                                 
@@ -374,7 +417,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 7 - Logic","level":"2.7","depth":1,"next":{"title":"Lecture 8 - The Logic of Subsets","level":"2.8","depth":1,"path":"chapter_1/lecture_8.md","ref":"chapter_1/lecture_8.md","articles":[]},"previous":{"title":"Lecture 6 - Computing Adjoints","level":"2.6","depth":1,"path":"chapter_1/lecture_6.md","ref":"chapter_1/lecture_6.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_1/lecture_7.md","mtime":"2018-04-11T20:46:35.069Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T20:57:51.096Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 7 - Logic","level":"2.7","depth":1,"next":{"title":"Lecture 8 - The Logic of Subsets","level":"2.8","depth":1,"path":"chapter_1/lecture_8.md","ref":"chapter_1/lecture_8.md","articles":[]},"previous":{"title":"Lecture 6 - Computing Adjoints","level":"2.6","depth":1,"path":"chapter_1/lecture_6.md","ref":"chapter_1/lecture_6.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_7.md","mtime":"2018-04-11T21:19:45.373Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T21:20:47.464Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
