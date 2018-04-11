@@ -164,3 +164,6 @@ have colimits: consider for example the category of free groups and
 homomorphisms between those." It's amazing how much better people
 respond when they don't perceive a correction as being _an attack on
 their person_. People are incredibly sensitive things.
+
+[Click here to read the original
+discussion](https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction/p1)

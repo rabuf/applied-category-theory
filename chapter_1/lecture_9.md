@@ -1,3 +1,5 @@
+# Lecture 9 - Adjoints and the Logic of Subsets
+---
 We've seen that classical logic is closely connected to the logic of
 subsets.  For any set \\( X \\) we get a poset \\( PX \\), the **power
 set** of \\(X\\), whose elements are _subsets_ of \\(X\\), with the
@@ -119,3 +121,5 @@ Two more puzzles!  Let \\( X \\) be the set of states of your room, and \\( Y \\
 **Puzzle 25.** What is \\(f_{\ast}(\\{\text{there is a living cat in your room}\\})\\)? How is this an example of the "conservative" or "cautious" nature of right adjoints, meaning that they're a "best approximation from below"?
 
 **[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
+
+[Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1931/lecture-9-chapter-1-adjoints-and-the-logic-of-subsets/p1)

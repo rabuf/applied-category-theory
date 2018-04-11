@@ -19,3 +19,13 @@ here:
 * [Seven Sketches book: Typos, comments, questions, and suggestions.](https://docs.google.com/document/d/160G9OFcP5DWT8Stn7TxdVx83DJnnf7d5GML0_FOD5Wg/edit)
 
 If it's really a mistake, Fong and Spivak will fix it!
+
+---
+
+- The source for this book can be found [here](https://github.com/rabuf/applied-category-theory).
+
+- The online book can be found  [here](https://rabuf.github.io/applied-category-theory/).
+
+---
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

@@ -1,3 +1,5 @@
+# Lecture 4 - Galois Connections
+---
 Okay, now let's get to the cool part: Galois connections. Before he
 died in a duel, the young [&Eacute;variste
 Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois) proved

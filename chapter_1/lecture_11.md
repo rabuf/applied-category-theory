@@ -1,3 +1,5 @@
+# Lecture 11 - The Poset of Partitions
+---
 Last time we learned about _partitions_ of a set: ways of chopping it into disjoint nonempty sets called 'parts'.  
 
 <center><img width = "300" src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/set_partition.png"></center>
@@ -86,6 +88,4 @@ This leads up to the punchline of Chapter 1: the idea of "generative effects".  
 
 **[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
 
-
-
-
+[Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1991/lecture-11-chapter-1-the-poset-of-partitions/p1)

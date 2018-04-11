@@ -1,3 +1,5 @@
+# Lecture 7 - Logic
+---
 So far the only _examples_ of posets I've talked about in the lectures are the real numbers \\(\mathbb{R}\\) and the natural numbers \\(\mathbb{N}\\) with their usual order \\(\le\\).  Of course every natural number is a real number, so there's a function
 
 $$   i : \mathbb{N} \to \mathbb{R} $$
@@ -31,3 +33,5 @@ Often people make this preorder into a poset by imposing this rule:
 This amounts to decreeing that we count two statements as "the same" if they both imply each other.  We may not always want to do this.    And we certainly don't want a linear order: it's easy to find examples of statements such that neither \\( P \implies Q\\) nor \\(Q \implies P\\), like "I am a millionaire" and "I am happy", or "I like this food for breakfast" and "I like this food for lunch".
 
 So, to continue our study of preorders, posets, monotone functions and Galois connections, we'll turn to logic!  Category-theoretic logic is an enormous wonderful field, but we'll just do a bit of logic based on the poset of subsets of a set, followed by a bit of logic based on the poset of partitions of a set.   The latter underlies Fong and Spivak's discussion of "generative effects" in Chapter 1.
+
+[Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1909/lecture-7-chapter-1-logic/p1)

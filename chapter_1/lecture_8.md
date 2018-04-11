@@ -1,3 +1,5 @@
+# Lecture 8 - The Logic of Subsets
+---
 I'd like to tell you about two kinds of logic.   In both, we start with a set \\( X \\) of "ways the world can be" and build a set of statements about the world, also known as "propositions".   In the first, propositions correspond to subsets of \\( X \\).  In the second, propositions correspond to partitions of \\( X \\).  In both approaches we get a _poset_ of propositions where the partial order is "implication", written \\( \implies \\).    
 
 The first kind of logic is very familiar.  We could call it "subset logic", but it's part of what people usually call "[classical logic](https://en.wikipedia.org/wiki/Classical_logic)".  This is the sort of logic we learn in school, assuming we learn any at all.    The second kind of logic is less well known: it's called "[partition logic](https://arxiv.org/abs/0902.1950)".   Interestingly, Fong and Spivak spend more time on the second kind.  
@@ -63,3 +65,5 @@ Next time, I'll show you this monotone map has both a left and a right adjoint! 
 So you see, I haven't given up talking about left and right adjoints.  I'm really just getting ready to explain how they show up in logic: first in good old classical "subset logic", and then in the weird new "partition logic".
 
 **[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
+
+[Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1921/lecture-8-chapter-1-the-logic-of-subsets/p1)

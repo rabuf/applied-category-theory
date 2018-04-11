@@ -1,3 +1,5 @@
+# Lecture 10 - The Logic of Partitions
+---
 I've been explaining how we can create a version of logic starting
 from any poset, which we think of as a poset of "propositions".  There
 are various ways to get our hands on such a poset.  One way is to
@@ -97,3 +99,5 @@ practice in reading mathematics.)
 **Puzzle 33.**  Is an equivalence relation always a preorder?  
 
 **[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
+
+[Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1963/lecture-10-chapter-1-the-logic-of-partitions/p1)
