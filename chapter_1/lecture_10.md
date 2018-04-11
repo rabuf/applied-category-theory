@@ -81,7 +81,7 @@ then \\(\sim_P \\) is an equivalence relation.
 
 **Puzzle 29.** Show that if \\(\sim\\) is an equivalence relation on a set \\(X\\), we can define a partition \\(P_\sim\\) on \\(X\\) whose parts are precisely the sets of the form
 
-$$  S_x = \\{y \in X : \; y \sim x \\}  $$
+$$  S_x = \{y \in X : \; y \sim x \}  $$
 
 with \\(x \in X\\).  We call \\(S_x\\) the **equivalence class** of \\(x\\).
 

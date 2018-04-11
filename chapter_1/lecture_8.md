@@ -28,7 +28,7 @@ But really, all this stuff is about one particular way of getting a poset from t
 
 For any set \\( X \\) the **[power set](https://en.wikipedia.org/wiki/Power_set)** of \\( X \\) is the collection of all subsets of \\( X \\).    We call it \\( PX \\).   It's a poset, where the partial ordering is \\( \subseteq \\).    
 
-For example, here is a picture of the poset \\( P X \\) when \\( X = \\{x,y,z\\} \\):
+For example, here is a picture of the poset \\( P X \\) when \\( X = \{x,y,z\} \\):
 
 <center><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasse_diagram_of_powerset_of_3.svg/500px-Hasse_diagram_of_powerset_of_3.svg.png"></center>
 
@@ -58,7 +58,7 @@ $$   f^* : P Y \to P X $$
 
 For any \\( S \in P Y \\), the set \\( f^*(S) \in PX \\) is defined like this:
 
-$$  f^*(S) = \\{ x \in X : \; f(x) \in S \\} $$
+$$  f^*(S) = \{ x \in X : \; f(x) \in S \} $$
 
 Next time, I'll show you this monotone map has both a left and a right adjoint!  And these turn out to be connected to the logical concepts of "there exists" and "for all".   I believe this was first discovered by the great category theorist [Bill Lawvere](https://www.emis.de/journals/TAC/reprints/articles/16/tr16abs.html).
 

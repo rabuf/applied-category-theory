@@ -70,7 +70,7 @@ $$ 1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570, \dots $$
 
 Another example: poset of subsets looks the same when you flip it upside down.  That's because any subset \\(S \subseteq X\\) has a **complement**
 
-$$   X - S = \\{x \in X : \; x \notin S \\} .$$
+$$   X - S = \{x \in X : \; x \notin S \} .$$
 
 In the logic of subsets this gives **negation**: if a subset \\(S \subseteq X\\) corresponds to some proposition \\(P\\),  its complement \\(X - S\\) corresponds to the proposition \\(\neg P \\), which is how logicians write "not \\(P\\) ".
 
