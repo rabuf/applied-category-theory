@@ -1,3 +1,6 @@
+# Lecture 2 - What is Applied Category Theory? 
+--------
+
 "Applied category theory" is fairly new, and I should warn you right away that it's just getting started.   While I can point you to some great applications of category theory outside mathematics and computer science, if you ask "have categories been successfully applied to X?" there's a high chance the answer will be no, even if such an application is possible!  It takes time.
 
 Category theory was created in 1947.  _It was created to be applied_. Mathematicians were having problems connecting topology to algebra, and Eilenberg and Mac Lane realized that 3 new concepts were required to solve these problems: category, functor, and natural transformation.  They succeeded wonderfully, and category theory started growing rapidly: it is now indispensable in the subject of "algebraic topology", which solves topology problems using algebra.  Later Grothendieck applied category theory to "algebraic geometry", and used it to prove the Weil Conjectures, some amazing conjectures relating number theory to geometry.  In the process he invented many other fundamental concepts, like topoi, or toposes.  By now category theory is a very large subject that takes a long time to thoroughly learn.
