@@ -309,22 +309,61 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>Okay, let&apos;s get started!  </p>
-<p>Fong and Spivak start out by explaining <strong>posets</strong>, which is short for &quot;partially ordered sets&quot;.   Whenever you have a set of things and a reasonable way deciding when anything in that set is &quot;bigger&quot; than some other thing, or &quot;more expensive&quot;, or &quot;taller&quot;, or &quot;heavier&quot;, or &quot;better&quot; in any well-defined sense, or... anything like that, you&apos;ve got a poset.  When \(y\) is bigger than \(x\) we write \(x \le y\).  (You can also write \(y \ge x\), of course.)  </p>
-<p>What do I mean by &quot;reasonable&quot;?  We demand that the \(\le\) relation obey these rules:</p>
+                                <p>Okay, let&apos;s get started!</p>
+<p>Fong and Spivak start out by explaining <strong>posets</strong>, which is short for
+&quot;partially ordered sets&quot;.  Whenever you have a set of things and a
+reasonable way deciding when anything in that set is &quot;bigger&quot; than
+some other thing, or &quot;more expensive&quot;, or &quot;taller&quot;, or &quot;heavier&quot;, or
+&quot;better&quot; in any well-defined sense, or... anything like that, you&apos;ve
+got a poset.  When \(y\) is bigger than \(x\) we write \(x \le
+y\).  (You can also write \(y \ge x\), of course.)</p>
+<p>What do I mean by &quot;reasonable&quot;?  We demand that the \(\le\) relation
+obey these rules:</p>
 <ol>
 <li><p><strong>reflexivity</strong>: \(x \le x\)</p>
 </li>
-<li><p><strong>transitivity</strong> \(x \le y\) and \(y \le z\) imply \(x \le z\).</p>
+<li><p><strong>transitivity</strong> \(x \le y\) and \(y \le z\) imply \(x \le
+z\).</p>
 </li>
 </ol>
-<p>A set with a relation obeying these rules is called a <strong><a href="https://en.wikipedia.org/wiki/Preorder" target="_blank">preorder</a></strong>.</p>
-<p>This is a fundamental concept!   After all, humans are always busy trying to compare things and see what&apos;s better.  So, we&apos;ll start by studying preorders.   </p>
-<p>But I can&apos;t resist revealing a secret trick that Fong and Spivak are playing on you here.  Why in the world should a book on applied category theory start by discussing preorders?  Why not start by discussing <em>categories?</em></p>
-<p>The answer: a preorder is a specially simple kind of category.  A category, as you may have heard, has a bunch of &apos;objects&apos; \(x,y,z,\dots\) and &apos;morphisms&apos; between them.  A morphism from \(x\) to \(y\) is written \(f : x \to y\).   You can &apos;compose&apos; a morphism from \(f : x \to y\) with a morphism from \(g: y \to z\) and get a morphism \(gf : x \to z\).  Every object \(x\) has an &apos;identity&apos; morphism \(1_x : x \to x\).  And a few simple rules must hold.  We&apos;ll get into them later.</p>
-<p>But a category with <em>at most one</em> morphism from any object \(x\) to any object \(y\) is really just a preorder!   If there&apos;s a morphism from \(x\) to \(y\) we simply write \(x \le y\).    We don&apos;t need to give the morphism a name because there&apos;s at most one from  \(x\) to \(y\).</p>
-<p>So, the study of preorders is a baby version of category theory, where everything gets much easier!    And when Fong and Spivak are teaching you about preorders, they&apos;re sneakily getting you used to categories.  Then, when they introduce categories explicitly, you can always fall back on preorders as examples.  </p>
-<p>I&apos;ve posted 4 puzzles on preorders <a href="https://forum.azimuthproject.org/discussion/comment/15878/#Comment_15878" target="_blank">here</a>.  Look at them!  I just answered Puzzle 3.  Puzzle 4 has millions of answers - come up with another!  Also look at Puzzle 5 <a href="https://forum.azimuthproject.org/discussion/comment/15954/#Comment_15954" target="_blank">here</a>.  And people who already know the definition of a category, and want to ponder how preorders are a special case of categories, should try Puzzles 6 and 7 <a href="https://forum.azimuthproject.org/discussion/comment/16077/#Comment_16077" target="_blank">here</a>.</p>
+<p>A set with a relation obeying these rules is called a
+<strong><a href="https://en.wikipedia.org/wiki/Preorder" target="_blank">preorder</a></strong>.</p>
+<p>This is a fundamental concept!  After all, humans are always busy
+trying to compare things and see what&apos;s better.  So, we&apos;ll start by
+studying preorders.</p>
+<p>But I can&apos;t resist revealing a secret trick that Fong and Spivak are
+playing on you here.  Why in the world should a book on applied
+category theory start by discussing preorders?  Why not start by
+discussing <em>categories?</em></p>
+<p>The answer: a preorder is a specially simple kind of category.  A
+category, as you may have heard, has a bunch of &apos;objects&apos;
+\(x,y,z,\dots\) and &apos;morphisms&apos; between them.  A morphism from
+\(x\) to \(y\) is written \(f : x \to y\).  You can &apos;compose&apos; a
+morphism from \(f : x \to y\) with a morphism from \(g: y \to z\)
+and get a morphism \(gf : x \to z\).  Every object \(x\) has an
+&apos;identity&apos; morphism \(1_x : x \to x\).  And a few simple rules must
+hold.  We&apos;ll get into them later.</p>
+<p>But a category with <em>at most one</em> morphism from any object \(x\) to
+any object \(y\) is really just a preorder!  If there&apos;s a morphism
+from \(x\) to \(y\) we simply write \(x \le y\).  We don&apos;t need
+to give the morphism a name because there&apos;s at most one from \(x\)
+to \(y\).</p>
+<p>So, the study of preorders is a baby version of category theory, where
+everything gets much easier!  And when Fong and Spivak are teaching
+you about preorders, they&apos;re sneakily getting you used to categories.
+Then, when they introduce categories explicitly, you can always fall
+back on preorders as examples.</p>
+<p>I&apos;ve posted 4 puzzles on preorders
+<a href="https://forum.azimuthproject.org/discussion/comment/15878/#Comment_15878" target="_blank">here</a>.
+Look at them!  I just answered Puzzle 3.  Puzzle 4 has millions of
+answers - come up with another!  Also look at Puzzle 5
+<a href="https://forum.azimuthproject.org/discussion/comment/15954/#Comment_15954" target="_blank">here</a>.
+And people who already know the definition of a category, and want to
+ponder how preorders are a special case of categories, should try
+Puzzles 6 and 7
+<a href="https://forum.azimuthproject.org/discussion/comment/16077/#Comment_16077" target="_blank">here</a>.</p>
+<p><a href="https://forum.azimuthproject.org/discussion/1812/lecture-3-chapter-1-posets/p1" target="_blank">Click here to read the original
+discussion.</a></p>
 
                                 
                                 </section>
@@ -368,7 +407,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 3 - Posets","level":"1.2.3","depth":2,"next":{"title":"Lecture 4 - Galois Connections","level":"1.2.4","depth":2,"path":"chapter_1/lecture_4.md","ref":"chapter_1/lecture_4.md","articles":[]},"previous":{"title":"Lecture 2 - What is Applied Category Theory?","level":"1.2.2","depth":2,"path":"chapter_1/lecture_2.md","ref":"chapter_1/lecture_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_1/lecture_3.md","mtime":"2018-04-11T02:57:13.566Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T03:08:25.929Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 3 - Posets","level":"1.2.3","depth":2,"next":{"title":"Lecture 4 - Galois Connections","level":"1.2.4","depth":2,"path":"chapter_1/lecture_4.md","ref":"chapter_1/lecture_4.md","articles":[]},"previous":{"title":"Lecture 2 - What is Applied Category Theory?","level":"1.2.2","depth":2,"path":"chapter_1/lecture_2.md","ref":"chapter_1/lecture_2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["mathjax"],"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_1/lecture_3.md","mtime":"2018-04-11T11:05:22.966Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T11:07:37.735Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
