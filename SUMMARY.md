@@ -15,3 +15,4 @@
 * [Lecture 9 - Adjoints and the Logic of Subsets](chapter_1/lecture_9.md)
 * [Lecture 10 - The Logic of Partitions](chapter_1/lecture_10.md)
 * [Lecture 11 - The Poset of Partitions](chapter_1/lecture_11.md)
+* [Lecture 12 - Generative Effects](chapter_1/lecture_12.md)
