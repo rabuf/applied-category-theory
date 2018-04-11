@@ -1,5 +1,5 @@
 # Introduction
-Hi! Welcome to the **[Applied Category Theory Course](https://johncarlosbaez.wordpress.com/2018/03/26/seven-sketches-in-compositionality/)**.
+Hi! Welcome to the *GitBook-version of the*  **[Applied Category Theory Course](https://johncarlosbaez.wordpress.com/2018/03/26/seven-sketches-in-compositionality/)**. The full course exists on the [Azimuth Forum](https://forum.azimuthproject.org/categories/applied-category-theory-course) and this is a collection of the lectures that John Baez posted in the forum, in a GitBook-format.
 
 To begin, you can download a copy of the text:
 
