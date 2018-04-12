@@ -326,10 +326,12 @@ gets hard.  In fact, impossible!  But don&apos;t let that stop you.</p>
 <center><img width="300" src="https://johncarlosbaez.files.wordpress.com/2016/04/the-difficult-we-do-immediately-the-impossible-takes-a-little-longer.jpg"></center>
 
 <p>Suppose we have a function between sets, \(f : A \to B\). We say a
-function \(g: B \to A \) is the <strong>inverse</strong> of \(f\) if</p>
-<p><script type="math/tex; ">   g(f(a)) = a \textrm{ for all } a \in A  \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B</script></p>
+function \(g: B \to A\) is the <strong>inverse</strong> of \(f\) if</p>
+<center><script type="math/tex; ">g(f(a)) = a \textrm{ for all } a \in A  \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B</script></center>
+
 <p>Another equivalent way to say this is that</p>
-<p><script type="math/tex; "> f(a) = b  \textrm{ if and only if } a =  g(b) </script></p>
+<center><script type="math/tex; ">f(a) = b  \textrm{ if and only if } a =  g(b)</script></center>
+
 <p>for all \(a \in A\) and \(b \in B\).</p>
 <p>So, the idea is that \(g\) undoes \(f\). For example, if \(A = B
 = \mathbb{R}\) is the set of real numbers, and \(f\) doubles every
@@ -369,14 +371,17 @@ copy them here with notation that better matches what I&apos;m using now:</p>
 <p><strong>Puzzle 12.</strong> Find a right adjoint for the function \(f: \mathbb{N}
 \to \mathbb{N}\) that doubles natural numbers: that is, a function
 \(g : \mathbb{N} \to \mathbb{N}\) with</p>
-<p><script type="math/tex; ">  f(a) \le b  \textrm{ if and only if } a \le  g(b) </script></p>
+<center><script type="math/tex; ">f(a) \le b  \textrm{ if and only if } a \le  g(b)</script></center>
+
 <p>for all \(a,b \in \mathbb{N}\).</p>
 <p><strong>Puzzle 13.</strong> Find a left adjoint for the same function \(f\): that
 is, a function \(g : \mathbb{N} \to \mathbb{N}\) with</p>
-<p><script type="math/tex; ">  g(b) \le a  \textrm{ if and only if } b \le  f(a) </script></p>
+<center><script type="math/tex; ">g(b) \le a  \textrm{ if and only if } b \le  f(a)</script></center>
+
 <p>Next:</p>
 <p><strong>Puzzle 16.</strong> What&apos;s going on here? What&apos;s the pattern you see, and
 why is it working this way?</p>
+<hr>
 <p><a href="https://forum.azimuthproject.org/discussion/1845/lecture-5-chapter-1-galois-connections/p1" target="_blank">Click here to read the original
 discussion</a></p>
 
@@ -422,7 +427,7 @@ discussion</a></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 5 - Galois Connections","level":"2.5","depth":1,"next":{"title":"Lecture 6 - Computing Adjoints","level":"2.6","depth":1,"path":"chapter_1/lecture_6.md","ref":"chapter_1/lecture_6.md","articles":[]},"previous":{"title":"Lecture 4 - Galois Connections","level":"2.4","depth":1,"path":"chapter_1/lecture_4.md","ref":"chapter_1/lecture_4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_5.md","mtime":"2018-04-11T20:59:52.983Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T21:20:47.464Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 5 - Galois Connections","level":"2.5","depth":1,"next":{"title":"Lecture 6 - Computing Adjoints","level":"2.6","depth":1,"path":"chapter_1/lecture_6.md","ref":"chapter_1/lecture_6.md","articles":[]},"previous":{"title":"Lecture 4 - Galois Connections","level":"2.4","depth":1,"path":"chapter_1/lecture_4.md","ref":"chapter_1/lecture_4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_5.md","mtime":"2018-04-12T01:47:50.952Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-12T02:41:27.735Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

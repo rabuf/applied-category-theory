@@ -313,31 +313,34 @@
                                 <h1 id="lecture-10---the-logic-of-partitions">Lecture 10 - The Logic of Partitions</h1>
 <hr>
 <p>I&apos;ve been explaining how we can create a version of logic starting
-from any poset, which we think of as a poset of &quot;propositions&quot;.  There
-are various ways to get our hands on such a poset.  One way is to
-start with a set \( X \) and build a poset \( P X \) whose
-elements are subsets of \( X \).  This leads to the most traditional
-form of logic, called classical logic.  But another way is to start
-with a set \( X \) and build a poset \( \mathcal{E}(X) \) whose
-elements are &quot;partitions&quot; of \( X \).  This leads to another form of
-logic, called the logic of partitions.</p>
-<p>What&apos;s a partition?  It&apos;s a way of chopping the set \( X \) into
-&quot;parts&quot;.  We want each part to be a nonempty subset of \( X \), we
-want these parts to be disjoint, and we want their union to be all of
-\( X \).  For example, here are all 52 partitions of a set with 5
+from any poset, which we think of as a poset of &quot;propositions&quot;. There
+are various ways to get our hands on such a poset. One way is to start
+with a set \(X\) and build a poset \(P X\) whose elements are
+subsets of \(X\). This leads to the most traditional form of logic,
+called classical logic. But another way is to start with a set \(X\)
+and build a poset \(\mathcal{E}(X)\) whose elements are &quot;partitions&quot;
+of \(X\). This leads to another form of logic, called the logic of
+partitions.</p>
+<p>What&apos;s a partition? It&apos;s a way of chopping the set \(X\) into
+&quot;parts&quot;. We want each part to be a nonempty subset of \(X\), we want
+these parts to be disjoint, and we want their union to be all of
+\(X\). For example, here are all 52 partitions of a set with 5
 elements:</p>
 <center><img src="partitions_of_5.png"></center>
 
 <p>At the top we see the &quot;coarsest&quot; partition, where all 5 elements are
-in the same part.  At the bottom we see the &quot;finest&quot; partition, where
+in the same part. At the bottom we see the &quot;finest&quot; partition, where
 each element is in its own separate part.</p>
-<p>How can we think of these partitions as &quot;propositions&quot;?  Here&apos;s how: each partition gives a proposition saying that two elements in the same part are &quot;equivalent&quot;, or the same in some way.  The coarser the partition, the more elements are equivalent.  </p>
+<p>How can we think of these partitions as &quot;propositions&quot;? Here&apos;s how:
+each partition gives a proposition saying that two elements in the
+same part are &quot;equivalent&quot;, or the same in some way. The coarser the
+partition, the more elements are equivalent.</p>
 <p>For example, imagine you&apos;re a detective trying to solve a case on a
-small island with 5 people on it.  At first you don&apos;t know any of them
+small island with 5 people on it. At first you don&apos;t know any of them
 are related, so they&apos;re all in separate families, as far as you know:</p>
 <center><img src="partition_of_5_finest.png"></center>
 
-<p>But then you start digging into their history.  Each time you learn
+<p>But then you start digging into their history. Each time you learn
 that two people are related, you change your partition by putting them
 into the same part:</p>
 <center><img src="partition_of_5_less_fine.png"></center>
@@ -346,52 +349,67 @@ into the same part:</p>
 <center><img src="partition_of_5_coarser.png"></center>
 
 <p>So as you learn more, you &quot;climb up the poset of partitions&quot;, moving
-to coarser and coarser partitions.  That&apos;s how it works in partition
+to coarser and coarser partitions. That&apos;s how it works in partition
 logic.</p>
-<p>Let&apos;s make this precise!  A partition of \(X\) is a bunch of subsets
-of \(X\). So, it&apos;s a subset of \(P(X)\).  Please think about that
-until it makes sense, or ask questions!  There are a lot of sets and
-subsets running around: it can be confusing.  But here we go:</p>
-<p><strong>Definition.</strong>  A <strong>partition</strong> of a set \(X\) is a set \(P \subseteq P(X)\) such that:</p>
+<p>Let&apos;s make this precise! A partition of \(X\) is a bunch of subsets
+of \(X\). So, it&apos;s a subset of \(P(X)\). Please think about that
+until it makes sense, or ask questions! There are a lot of sets and
+subsets running around: it can be confusing. But here we go:</p>
+<p><strong>Definition.</strong> A <strong>partition</strong> of a set \(X\) is a set \(P
+\subseteq P(X)\) such that:</p>
 <ol>
 <li><p>Each set \(S \in P \) is nonempty.</p>
 </li>
-<li><p>Distinct sets \(S, T \in P\) are disjoint: that is, if \(S \ne T\) then \(S \cap T = \emptyset \).</p>
+<li><p>Distinct sets \(S, T \in P\) are disjoint: that is, if \(S \ne
+T\) then \(S \cap T = \emptyset \).</p>
 </li>
 <li><p>The union of all the sets \(S \in P\) is \(X\): that is,</p>
 </li>
 </ol>
-<p><script type="math/tex; ">  X = \bigcup_{S \in P} S </script></p>
+<center><script type="math/tex; ">  X = \bigcup_{S \in P} S </script></center>
+
 <p>We call the sets \(S \in P\) the <strong>parts</strong> of the partition.</p>
 <p>I said that each partition \(P\) gives an equivalence relation,
 where two elements of \(X\) are &quot;equivalent&quot; if and only if they&apos;re
-in the same part.  Let&apos;s make that precise too:</p>
-<p><strong>Definition.</strong> An <strong>equivalence relation</strong> on a set \(X\) is a relation \(\sim\) on \(X\) that is: </p>
+in the same part. Let&apos;s make that precise too:</p>
+<p><strong>Definition.</strong> An <strong>equivalence relation</strong> on a set \(X\) is a
+relation \(\sim\) on \(X\) that is:</p>
 <ol>
 <li><p><strong>Reflexive:</strong> for all \(x \in X\), \(x \sim x\).</p>
 </li>
-<li><p><strong>Transitive:</strong> for all \(x,y,z \in Z\), \(x \sim y \) and \(y \sim z\) imply \(x \sim z\).</p>
+<li><p><strong>Transitive:</strong> for all \(x,y,z \in Z\), \(x \sim y \) and \(y
+\sim z\) imply \(x \sim z\).</p>
 </li>
-<li><p><strong>Symmetric:</strong> for all \(x,y \in X\), \(x \sim y\) implies \(y \sim x.\)</p>
+<li><p><strong>Symmetric:</strong> for all \(x,y \in X\), \(x \sim y\) implies \(y
+\sim x.\)</p>
 </li>
 </ol>
-<p><strong>Puzzle 28.</strong> Show that if \(P\) is a partition of a set \(X\), and we define a  relation \(\sim_P\) on \(X\) as follows:</p>
-<p><script type="math/tex; ">   x \sim_P y \textrm{ if and only if }  x, y \in S \textrm{ for some } S \in P, </script></p>
-<p>then \(\sim_P \) is an equivalence relation.</p>
-<p><strong>Puzzle 29.</strong> Show that if \(\sim\) is an equivalence relation on a set \(X\), we can define a partition \(P_\sim\) on \(X\) whose parts are precisely the sets of the form</p>
-<p><script type="math/tex; ">  S_x = \{y \in X : \; y \sim x \}  </script></p>
-<p>with \(x \in X\).  We call \(S_x\) the <strong>equivalence class</strong> of \(x\).</p>
-<p><strong>Puzzle 31.</strong>  Show that the previous two puzzles give a one-to-one correspondence between partitions of \(X\) and equivalence relations on \(X\).</p>
+<p><strong>Puzzle 28.</strong> Show that if \(P\) is a partition of a set \(X\),
+and we define a relation \(\sim_P\) on \(X\) as follows:</p>
+<center><script type="math/tex; ">x \sim_P y \textrm{ if and only if }  x, y \in S \textrm{ for some } S \in P,</script></center>
+
+<p>then \(\sim_P\) is an equivalence relation.</p>
+<p><strong>Puzzle 29.</strong> Show that if \(\sim\) is an equivalence relation on a
+set \(X\), we can define a partition \(P_\sim\) on \(X\) whose
+parts are precisely the sets of the form</p>
+<center><script type="math/tex; ">S_x = \{y \in X : \; y \sim x \}</script></center>
+
+<p>with \(x \in X\). We call \(S_x\) the <strong>equivalence class</strong> of
+\(x\).</p>
+<p><strong>Puzzle 31.</strong> Show that the previous two puzzles give a one-to-one
+correspondence between partitions of \(X\) and equivalence relations
+on \(X\).</p>
 <p><strong>Puzzle 32.</strong> Proposition 1.11 of <em><a href="http://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf" target="_blank">Seven
 Sketches</a></em>
 asserts that there is a one-to-one correspondence between partitions
-of \(X\) and equivalence relations on \(X\).  However, in the
-current version of the book this proposition is false!  Nonetheless,
-the statement in Puzzle 31 is correct.  How is this possible?  (Hint:
-you have to read their definitions quite carefully.  This is good
+of \(X\) and equivalence relations on \(X\). However, in the
+current version of the book this proposition is false! Nonetheless,
+the statement in Puzzle 31 is correct. How is this possible? (Hint:
+you have to read their definitions quite carefully. This is good
 practice in reading mathematics.)</p>
-<p><strong>Puzzle 33.</strong>  Is an equivalence relation always a preorder?  </p>
+<p><strong>Puzzle 33.</strong> Is an equivalence relation always a preorder?</p>
 <p><strong><a href="http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course" target="_blank">To read other lectures go here.</a></strong></p>
+<hr>
 <p><a href="https://forum.azimuthproject.org/discussion/1963/lecture-10-chapter-1-the-logic-of-partitions/p1" target="_blank">Click here to read the original discussion.</a></p>
 
                                 
@@ -436,7 +454,7 @@ practice in reading mathematics.)</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 10 - The Logic of Partitions","level":"2.10","depth":1,"next":{"title":"Lecture 11 - The Poset of Partitions","level":"2.11","depth":1,"path":"chapter_1/lecture_11.md","ref":"chapter_1/lecture_11.md","articles":[]},"previous":{"title":"Lecture 9 - Adjoints and the Logic of Subsets","level":"2.9","depth":1,"path":"chapter_1/lecture_9.md","ref":"chapter_1/lecture_9.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_10.md","mtime":"2018-04-11T20:59:52.981Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-11T21:20:47.464Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 10 - The Logic of Partitions","level":"2.10","depth":1,"next":{"title":"Lecture 11 - The Poset of Partitions","level":"2.11","depth":1,"path":"chapter_1/lecture_11.md","ref":"chapter_1/lecture_11.md","articles":[]},"previous":{"title":"Lecture 9 - Adjoints and the Logic of Subsets","level":"2.9","depth":1,"path":"chapter_1/lecture_9.md","ref":"chapter_1/lecture_9.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_10.md","mtime":"2018-04-12T02:26:11.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-12T02:41:27.735Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
