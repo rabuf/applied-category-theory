@@ -6,7 +6,7 @@ Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois) proved
 that you couldn't solve the quintic equation with radicals: that is,
 there's nothing like the quadratic formula for equations like
 
-$$ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0.$$
+<center>$$ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0.$$</center>
 
 He used a trick for converting one view of a problem into another, and
 then converting the other view back into the original one. And by
@@ -24,7 +24,7 @@ relation.
 **monotone map** from \\(A\\) to \\(B\\) is a function \\(f : A \to
 B\\) such that
 
-$$ x \le_A y \textrm{ implies } f(x) \le_B f(y) . $$
+<center>$$x \le_A y \textrm{ implies } f(x) \le_B f(y).$$</center>
 
 for all elements \\(x,y \in A\\),
 
@@ -37,7 +37,7 @@ connection](https://en.wikipedia.org/wiki/Galois_connection)** is a
 monotone map \\(f : A \to B\\) together with a monotone map \\(g: B
 \to A\\) such that
 
-$$ f(a) \le_B b  \textrm{ if and only if } a \le_A g(b) $$
+<center>$$f(a) \le_B b  \textrm{ if and only if } a \le_A g(b)$$</center>
 
 for all \\(a \in A, b \in B\\). In this situation we call \\(f\\) the
 **left adjoint** and \\(g\\) the **right adjoint**.
@@ -61,12 +61,12 @@ definition on the table right away.
 Here's one easy example to get you started. Let \\(\mathbb{N}\\) be
 the set of natural numbers with its usual notion of \\(\le\\).
 There's a function \\(f : \mathbb{N} \to \mathbb{N}\\) with \\(f(x) =
-2x \\). This function doesn't have an inverse. But:
+2x\\). This function doesn't have an inverse. But:
 
 **Puzzle 12.** Find a right adjoint for \\(f\\): that is, a function
 \\(g : \mathbb{N} \to \mathbb{N}\\) with
 
-$$  f(m) \le n  \textrm{ if and only if } m \le  g(n) $$
+<center>$$f(m) \le n  \textrm{ if and only if } m \le  g(n)$$</center>
 
 for all \\(m,n \in \mathbb{N}\\). How many right adjoints can you
 find?
@@ -74,9 +74,11 @@ find?
 **Puzzle 13.** Find a left adjoint for \\(f\\): that is, a function
 \\(g : \mathbb{N} \to \mathbb{N}\\) with
 
-$$  g(m) \le n  \textrm{ if and only if } m \le  f(n) $$
+<center>$$g(m) \le n  \textrm{ if and only if } m \le  f(n)$$</center>
 
 for all \\(m,n \in \mathbb{N}\\). How many left adjoints can you find?
+
+---
 
 [Click here to read the original
 discussion.](https://forum.azimuthproject.org/discussion/1828/lecture-4-chapter-1-galois-connections/p1)

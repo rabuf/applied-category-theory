@@ -102,16 +102,13 @@ followed by a week-long workshop in the Netherlands:
   [School](https://johncarlosbaez.wordpress.com/2017/10/22/applied-category-theory-2018-adjoint-school/)
   23-27 April 2018 and
   [workshop](https://johncarlosbaez.wordpress.com/2017/09/12/act-2018/)
-  30 April-4 May 2018 at the <a
-  href="https://www.lorentzcenter.nl/">Lorentz Center</a> in Leiden,
-  the Netherlands.  Organized by <a
-  href="http://www.cs.ox.ac.uk/bob.coecke/">Bob Coecke</a> (Oxford),
-  <a href="http://www.brendanfong.com/">Brendan Fong</a> (MIT), <a
-  href="http://www.cs.ru.nl/A.Kissinger/">Aleks Kissinger</a>
-  (Nijmegen), <a
-  href="https://www.cs.ox.ac.uk/people/martha.lewis/">Martha Lewis</a>
-  (Amsterdam), and <a href="http://joshuatan.com/research">Joshua
-  Tan</a> (Oxford).
+  30 April-4 May 2018 at the [Lorentz
+  Center](https://www.lorentzcenter.nl/) in Leiden, the Netherlands.
+  Organized by [Bob Coecke](http://www.cs.ox.ac.uk/bob.coecke/)
+  (Oxford), [Brendan Fong](http://www.brendanfong.com/) (MIT), [Aleks
+  Kissinger](http://www.cs.ru.nl/A.Kissinger/) (Nijmegen), [Martha
+  Lewis](https://www.cs.ox.ac.uk/people/martha.lewis/) (Amsterdam),
+  and [Joshua Tan](http://joshuatan.com/research) (Oxford).
 
 There should be a lot to see on YouTube! I'll be there, and I'll keep
 you informed.
@@ -124,6 +121,8 @@ its own name.
 The book by Fong and Spivak is a great introduction to category theory
 as viewed from this new perspective. So that's what we'll talk about
 here!
+
+---
 
 [Click here to read the original
 discussion](https://forum.azimuthproject.org/discussion/1808/lecture-2-what-is-applied-category-theory/p1)

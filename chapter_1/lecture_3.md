@@ -62,5 +62,7 @@ ponder how preorders are a special case of categories, should try
 Puzzles 6 and 7
 [here](https://forum.azimuthproject.org/discussion/comment/16077/#Comment_16077).
 
+---
+
 [Click here to read the original
 discussion.](https://forum.azimuthproject.org/discussion/1812/lecture-3-chapter-1-posets/p1)

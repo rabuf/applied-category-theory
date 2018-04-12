@@ -19,13 +19,13 @@ gets hard.  In fact, impossible!  But don't let that stop you.
 "https://johncarlosbaez.files.wordpress.com/2016/04/the-difficult-we-do-immediately-the-impossible-takes-a-little-longer.jpg"></center>
 
 Suppose we have a function between sets, \\(f : A \to B\\). We say a
-function \\(g: B \to A \\) is the **inverse** of \\(f\\) if
+function \\(g: B \to A\\) is the **inverse** of \\(f\\) if
 
-$$   g(f(a)) = a \textrm{ for all } a \in A  \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B$$
+<center>$$g(f(a)) = a \textrm{ for all } a \in A  \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B$$</center>
 
 Another equivalent way to say this is that
 
-$$ f(a) = b  \textrm{ if and only if } a =  g(b) $$
+<center>$$f(a) = b  \textrm{ if and only if } a =  g(b)$$</center>
 
 for all \\(a \in A\\) and \\(b \in B\\).
 
@@ -81,19 +81,21 @@ copy them here with notation that better matches what I'm using now:
 \to \mathbb{N}\\) that doubles natural numbers: that is, a function
 \\(g : \mathbb{N} \to \mathbb{N}\\) with
 
-$$  f(a) \le b  \textrm{ if and only if } a \le  g(b) $$
+<center>$$f(a) \le b  \textrm{ if and only if } a \le  g(b)$$</center>
 
 for all \\(a,b \in \mathbb{N}\\).
 
 **Puzzle 13.** Find a left adjoint for the same function \\(f\\): that
 is, a function \\(g : \mathbb{N} \to \mathbb{N}\\) with
 
-$$  g(b) \le a  \textrm{ if and only if } b \le  f(a) $$
+<center>$$g(b) \le a  \textrm{ if and only if } b \le  f(a)$$</center>
 
 Next:
 
 **Puzzle 16.** What's going on here? What's the pattern you see, and
 why is it working this way?
+
+---
 
 [Click here to read the original
 discussion](https://forum.azimuthproject.org/discussion/1845/lecture-5-chapter-1-galois-connections/p1)

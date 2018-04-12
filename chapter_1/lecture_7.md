@@ -60,12 +60,12 @@ have
 Often people make this preorder into a poset by imposing this rule:
 
 3) antisymmetry: if \\(P \implies Q\\) and \\(Q \implies P\\) then
-\\(P = Q \\).
+\\(P = Q\\).
 
 This amounts to decreeing that we count two statements as "the same"
 if they both imply each other. We may not always want to do this.
 And we certainly don't want a linear order: it's easy to find examples
-of statements such that neither \\( P \implies Q\\) nor \\(Q \implies
+of statements such that neither \\(P \implies Q\\) nor \\(Q \implies
 P\\), like "I am a millionaire" and "I am happy", or "I like this food
 for breakfast" and "I like this food for lunch".
 
@@ -75,5 +75,7 @@ an enormous wonderful field, but we'll just do a bit of logic based on
 the poset of subsets of a set, followed by a bit of logic based on the
 poset of partitions of a set. The latter underlies Fong and Spivak's
 discussion of "generative effects" in Chapter 1.
+
+---
 
 [Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1909/lecture-7-chapter-1-logic/p1)
