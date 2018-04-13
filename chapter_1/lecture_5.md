@@ -1,4 +1,4 @@
-# Lecture 5 - Galois Connections
+# Lecture 5 - Galois Connections Part 2
 ---
 Okay: I've told you what a Galois connection is. But now it's time to
 explain why they matter. This will take much longer - and be much more
