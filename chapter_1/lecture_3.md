@@ -66,3 +66,7 @@ Puzzles 6 and 7
 
 [Click here to read the original
 discussion.](https://forum.azimuthproject.org/discussion/1812/lecture-3-chapter-1-posets/p1)
+
+---
+
+{% include "../LICENSE.md" %}

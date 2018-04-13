@@ -135,3 +135,7 @@ fact about reality.
 ---
 
 [Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1991/lecture-11-chapter-1-the-poset-of-partitions/p1)
+
+---
+
+{% include "../LICENSE.md" %}

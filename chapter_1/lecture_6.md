@@ -140,3 +140,7 @@ adjoints! Next we'll start looking at more examples.
 ---
 
 [Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1901/lecture-6-chapter-1-computing-adjoints/p1)
+
+---
+
+{% include "../LICENSE.md" %}

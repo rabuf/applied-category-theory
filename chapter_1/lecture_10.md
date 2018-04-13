@@ -119,3 +119,7 @@ practice in reading mathematics.)
 ---
 
 [Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1963/lecture-10-chapter-1-the-logic-of-partitions/p1)
+
+---
+
+{% include "../LICENSE.md" %}

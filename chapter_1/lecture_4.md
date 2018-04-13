@@ -82,3 +82,7 @@ for all \\(m,n \in \mathbb{N}\\). How many left adjoints can you find?
 
 [Click here to read the original
 discussion.](https://forum.azimuthproject.org/discussion/1828/lecture-4-chapter-1-galois-connections/p1)
+
+---
+
+{% include "../LICENSE.md" %}

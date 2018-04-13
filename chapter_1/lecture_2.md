@@ -126,3 +126,7 @@ here!
 
 [Click here to read the original
 discussion](https://forum.azimuthproject.org/discussion/1808/lecture-2-what-is-applied-category-theory/p1)
+
+---
+
+{% include "../LICENSE.md" %}

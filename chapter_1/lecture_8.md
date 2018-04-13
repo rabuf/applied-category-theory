@@ -138,3 +138,7 @@ first in good old classical "subset logic", and then in the weird new
 ---
 
 [Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1921/lecture-8-chapter-1-the-logic-of-subsets/p1)
+
+---
+
+{% include "../LICENSE.md" %}

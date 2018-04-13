@@ -99,3 +99,7 @@ why is it working this way?
 
 [Click here to read the original
 discussion](https://forum.azimuthproject.org/discussion/1845/lecture-5-chapter-1-galois-connections/p1)
+
+---
+
+{% include "../LICENSE.md" %}

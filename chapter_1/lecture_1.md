@@ -169,3 +169,7 @@ their person_. People are incredibly sensitive things.
 
 [Click here to read the original
 discussion](https://forum.azimuthproject.org/discussion/1807/lecture-1-introduction/p1)
+
+---
+
+{% include "../LICENSE.md" %}

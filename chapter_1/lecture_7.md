@@ -79,3 +79,7 @@ discussion of "generative effects" in Chapter 1.
 ---
 
 [Click here to read the original discussion.](https://forum.azimuthproject.org/discussion/1909/lecture-7-chapter-1-logic/p1)
+
+---
+
+{% include "../LICENSE.md" %}
