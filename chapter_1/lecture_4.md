@@ -1,17 +1,17 @@
-# Lecture 4 - Galois Connections
+# Lecture 4 - Galois Connections Part 1
 ---
 Okay, now let's get to the cool part: Galois connections. Before he
 died in a duel, the young [&Eacute;variste
 Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois) proved
 that you couldn't solve the quintic equation with radicals: that is,
-there's nothing like the quadratic formula for equations like
+there's nothing like the quadratic formula for equations like:
 
 <center>$$ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0.$$</center>
 
 He used a trick for converting one view of a problem into another, and
 then converting the other view back into the original one. And by
 now, we've extracted the essence of this trick and dubbed it a "Galois
-connection". It's far more general than Galois dreamed.
+connection". It's far more general than Galois dreamed. More [here.](https://pdfs.semanticscholar.org/de4c/0a1a2269ddee82bd2d21f1ae23cdadb09cd7.pdf)
 
 Remember, a **[preorder](https://en.wikipedia.org/wiki/Preorder)** is
 a set \\(A\\) with a relation \\(\le_A\\) that's reflexive and
