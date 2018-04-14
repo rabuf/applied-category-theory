@@ -1,0 +1,545 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Lecture 13 - Pulling Back Partitions · Applied Category Theory</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="John Baez">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lecture_14.html" />
+    
+    
+    <link rel="prev" href="lecture_12.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Chapter 1</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="lecture_1.html">
+            
+                <a href="lecture_1.html">
+            
+                    
+                    Lecture 1 - Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="lecture_2.html">
+            
+                <a href="lecture_2.html">
+            
+                    
+                    Lecture 2 - What is Applied Category Theory?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="lecture_3.html">
+            
+                <a href="lecture_3.html">
+            
+                    
+                    Lecture 3 - Posets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="lecture_4.html">
+            
+                <a href="lecture_4.html">
+            
+                    
+                    Lecture 4 - Galois Connections Part 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="lecture_5.html">
+            
+                <a href="lecture_5.html">
+            
+                    
+                    Lecture 5 - Galois Connections Part 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="lecture_6.html">
+            
+                <a href="lecture_6.html">
+            
+                    
+                    Lecture 6 - Computing Adjoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="lecture_7.html">
+            
+                <a href="lecture_7.html">
+            
+                    
+                    Lecture 7 - Logic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="lecture_8.html">
+            
+                <a href="lecture_8.html">
+            
+                    
+                    Lecture 8 - The Logic of Subsets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="lecture_9.html">
+            
+                <a href="lecture_9.html">
+            
+                    
+                    Lecture 9 - Adjoints and the Logic of Subsets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="lecture_10.html">
+            
+                <a href="lecture_10.html">
+            
+                    
+                    Lecture 10 - The Logic of Partitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="lecture_11.html">
+            
+                <a href="lecture_11.html">
+            
+                    
+                    Lecture 11 - The Poset of Partitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="lecture_12.html">
+            
+                <a href="lecture_12.html">
+            
+                    
+                    Lecture 12 - Generative Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.13" data-path="lecture_13.html">
+            
+                <a href="lecture_13.html">
+            
+                    
+                    Lecture 13 - Pulling Back Partitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="lecture_14.html">
+            
+                <a href="lecture_14.html">
+            
+                    
+                    Lecture 14 - Adjoints, Joins, and Meets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Lecture 13 - Pulling Back Partitions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="lecture-13---pulling-back-partitions">Lecture 13 - Pulling Back Partitions</h1>
+<hr>
+<p>Last time we studied meets and joins of partitions.  We observed an
+interesting difference between the two.</p>
+<p>Suppose we have partitions \(P\) and \(Q\) of a set \(X\).  To
+figure out if two elements \(x , x&apos; \in X\) are in the same part of
+the meet \(P \wedge Q\), it&apos;s enough to know if they&apos;re the same
+part of \(P\) and the same part of \(Q\), since</p>
+<p><script type="math/tex; ">  x \sim_{P \wedge Q} x' \textrm{ if and only if } x \sim_P x' \textrm{ and } x \sim_Q x'. </script></p>
+<p>Here \(x \sim_P x&apos;\) means that \(x\) and \(x&apos;\) are in the same
+part of \(P\), and so on.</p>
+<p>However, this does <em>not</em> work for the join!</p>
+<p><script type="math/tex; "> \textbf{THIS IS FALSE: } \; x \sim_{P \vee Q} x' \textrm{ if and only if } x \sim_P x' \textrm{ or } x \sim_Q x'  .</script></p>
+<p>To understand this better, the key is to think about the &quot;inclusion&quot;</p>
+<p><script type="math/tex; ">  i : \\{x,x'\\} \to X , </script></p>
+<p>that is, the function sending \(x\) and \(x&apos;\) to themselves
+thought of as elements of \(X\).  We&apos;ll soon see that any partition
+\(P\) of \(X\) can be &quot;pulled back&quot; to a partition
+\(i^{\ast}(P)\) on the little set \( \{x,x&apos;\} \).  And we&apos;ll see
+that our observation can be restated as follows:</p>
+<p><script type="math/tex; ">   i^{\ast}(P \wedge Q) = i^{\ast}(P) \wedge i^{\ast}(Q)  </script></p>
+<p>but</p>
+<p><script type="math/tex; "> \textbf{THIS IS FALSE: } \;  i^{\ast}(P \vee Q) = i^{\ast}(P) \vee i^{\ast}(Q) .</script></p>
+<p>This is just a slicker way of saying the exact same thing.  But it
+will turn out to be more illuminating!</p>
+<p>So how do we &quot;pull back&quot; a partition?</p>
+<p>Suppose we have any function \(f : X \to Y\).  Given any partition
+\(P\) of \(Y\), we can &quot;pull it back&quot; along \(f\) and get a
+partition of \(X\) which we call \(f^{\ast}(P)\).  Here&apos;s an
+example from the book:</p>
+<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_pullback.png"></center>
+
+<p>Any part \(S\) of \(P\) gives a part of \(f^{\ast}(P)\): the set
+of all elements of \(X\) that map to \(S\).  This set is just the
+<strong>preimage</strong> of \(S\) under \(f\), which we met in <a href="https://forum.azimuthproject.org/discussion/1931/lecture-9-chapter-1-adjoints-and-the-logic-of-subsets/p1" target="_blank">Lecture
+9</a>.
+We called it</p>
+<p><script type="math/tex; ">   f^{\ast}(S) = \\{x \in X: \; f(x) \in S \\}. </script></p>
+<p>So beware: we are now using the symbol \(f^{\ast}\) in two ways: for
+the preimage of a subset and for the pullback of a partition.  But
+these two ways fit together very nicely, so it&apos;ll be okay.</p>
+<p>Summarizing:</p>
+<p><strong>Definition.</strong> Given a function \(f : X \to Y\) and a partition
+\(P\) of \(Y\), define the <strong>pullback</strong> of \(P\) along \(f\)
+to be this partition of \(X\):</p>
+<p><script type="math/tex; ">  f^{\ast}(P) = \\{ f^{\ast}(S) : \; S \in P \\} .</script></p>
+<p><strong>Puzzle 40.</strong> Show that \( f^{\ast}(P) \) really is a partition
+using the fact that \(P\) is.  It&apos;s fun to prove this using
+properties of the preimage map \( f^{\ast} : P(Y) \to P(X) \).</p>
+<p>It&apos;s easy to tell if two elements of \(X\) are in the same part of
+\(f^{\ast}(P)\): just map them to \(Y\) and see if they land in
+the same part of \(P\).  In other words,</p>
+<p><script type="math/tex; ">  x\sim_{f^{\ast}(P)} x' \textrm{ if and only if } f(x) \sim_P f(x')   </script></p>
+<p>Now for the main point:</p>
+<p><strong>Proposition.</strong> Given a function \(f : X \to Y\) and partitions
+\(P\) and \(Q\) of \(Y\), we always have</p>
+<p><script type="math/tex; ">    f^{\ast}(P \wedge Q) = f^{\ast}(P) \wedge f^{\ast}(Q)  </script></p>
+<p>but sometimes we have</p>
+<p><script type="math/tex; ">  f^{\ast}(P \vee Q) \ne f^{\ast}(P) \vee f^{\ast}(Q) . </script></p>
+<p><strong>Proof.</strong>   To prove that</p>
+<p><script type="math/tex; ">    f^{\ast}(P \wedge Q) = f^{\ast}(P) \wedge f^{\ast}(Q)  </script></p>
+<p>it&apos;s enough to prove that they give the same equivalence relation on
+\(X\).  That is, it&apos;s enough to show</p>
+<p><script type="math/tex; "> x \sim_{f^{\ast}(P \wedge Q)} x' \textrm{ if and only if } x \sim_{ f^{\ast}(P) \wedge f^{\ast}(Q) } x'. </script></p>
+<p>This looks scary but we just follow our nose.  First we rewrite the
+right-hand side using our observation about the meet of partitions:</p>
+<p><script type="math/tex; ">   x \sim_{f^{\ast}(P \wedge Q)} x' \textrm{ if and only if } x \sim_{ f^{\ast}(P)} x' \textrm{ and } x_{f^{\ast}(Q) } x'. </script></p>
+<p>Then we rewrite everything using what we just saw about the pullback:</p>
+<p><script type="math/tex; ">   f(x) \sim_{P \wedge Q} f(x') \textrm{ if and only if } f(x) \sim_P f(x') \textrm{ and } f(x) \sim_Q x'. </script></p>
+<p>And this is true, by our observation about the meet of partitions!
+So, we&apos;re really just stating that observation in a new language.</p>
+<p>To prove that sometimes</p>
+<p><script type="math/tex; ">    f^{\ast}(P \wedge Q) \ne f^{\ast}(P) \wedge f^{\ast}(Q) , </script></p>
+<p>we just need one example.  So, take \(P\) and \(Q\) to be these
+two partitions:</p>
+<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partitions_named.png"></center>
+
+<p>They are partitions on the set</p>
+<p><script type="math/tex; "> (Y = \\{11, 12, 13, 21, 22, 23 \\}. </script></p>
+<p>Take \(X = \{11,22\} \) and let \(i : X \to Y \) be the
+inclusion of \(X\) into \(Y\), meaning that</p>
+<p><script type="math/tex; ">  i(11) = 11, \quad i(22) = 22 . </script></p>
+<p>Then compute everything!  11 and 22 are in different parts of
+\(i^{\ast}(P)\):</p>
+<p><script type="math/tex; ">  i^{\ast}(P) = \\{ \\{11\\}, \\{22\\}  \\} </script></p>
+<p>They&apos;re also in different parts of \(i^{\ast}(Q)\):</p>
+<p><script type="math/tex; ">  i^{\ast}(Q) = \\{ \\{11\\}, \\{22\\}  \\} </script></p>
+<p>Thus, we have</p>
+<p><script type="math/tex; "> i^{\ast}(P) \vee  i^{\ast}(Q) = \\{ \\{11\\}, \\{22\\}  \\} .</script></p>
+<p>On the other hand, the join \(P \vee Q \) has just one part:</p>
+<p><script type="math/tex; "> P \vee Q = \\{Y\\} . </script></p>
+<p>If you don&apos;t see why, figure out the finest partition that&apos;s coarser
+than \(P\) and \(Q\) - that&apos;s \(P \vee Q \).  So, the pullback
+\(f^{\ast}(P) \vee f^{\ast}(Q) \) has just one part:</p>
+<p><script type="math/tex; ">  f^{\ast}(P \vee Q) = \\{ \\{11, 22 \\} \\} .</script></p>
+<p>So, we have</p>
+<p><script type="math/tex; ">    f^{\ast}(P \wedge Q) \ne f^{\ast}(P) \wedge f^{\ast}(Q)  </script></p>
+<p>as desired.  \( \quad \blacksquare \)</p>
+<p>Now for the real punchline.  The example we just saw was the same as
+our example of a &quot;generative effect&quot; in <a href="https://forum.azimuthproject.org/discussion/1999/lecture-12-chapter-1-generative-effects/p1" target="_blank">Lecture
+12</a>.
+So, we have a new way of thinking about generative effects: <em>the
+pullback of partitions preserves meets, but it may not preserve
+joins!</em></p>
+<p>This is an interesting feature of the logic of partitions.  Next time
+we&apos;ll understand it more deeply by pondering left and right adjoints.
+But to warm up, you should compare how meets and joins work in the
+logic of subsets:</p>
+<p><strong>Puzzle 41.</strong> Let \(f : X \to Y \) and let \(f^{\ast} : P(Y) \to
+P(X) \) be the function sending any subset of \(Y\) to its preimage
+in \(X\).  Given \(S,T \in P(Y) \), is it always true that</p>
+<p><script type="math/tex; ">   f^{\ast}(S \wedge T) = f^{\ast}(S) \wedge f^{\ast}(T ) ?  </script></p>
+<p>Is it always true that</p>
+<p><script type="math/tex; ">   f^{\ast}(S \vee T) = f^{\ast}(S) \vee f^{\ast}(T ) ?  </script></p>
+<p><strong><a href="http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course" target="_blank">To read other lectures go here.</a></strong></p>
+<p><a href="https://forum.azimuthproject.org/discussion/2008/lecture-13-chapter-1-pulling-back-partitions/p1" target="_blank">Click here to read the original discussion.</a></p>
+<hr>
+<h2 id="license">License</h2>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lecture_12.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 12 - Generative Effects">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lecture_14.html" class="navigation navigation-next " aria-label="Next page: Lecture 14 - Adjoints, Joins, and Meets">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"next":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"path":"chapter_1/lecture_14.md","ref":"chapter_1/lecture_14.md","articles":[]},"previous":{"title":"Lecture 12 - Generative Effects","level":"2.12","depth":1,"path":"chapter_1/lecture_12.md","ref":"chapter_1/lecture_12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_13.md","mtime":"2018-04-14T14:33:40.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:34:52.370Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

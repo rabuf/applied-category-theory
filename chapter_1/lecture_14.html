@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Lecture 10 - The Logic of Partitions · Applied Category Theory</title>
+        <title>Lecture 14 - Adjoints, Joins, and Meets · Applied Category Theory</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="lecture_11.html" />
     
-    
-    <link rel="prev" href="lecture_9.html" />
+    <link rel="prev" href="lecture_13.html" />
     
 
     </head>
@@ -226,7 +224,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.10" data-path="lecture_10.html">
+        <li class="chapter " data-level="2.10" data-path="lecture_10.html">
             
                 <a href="lecture_10.html">
             
@@ -278,7 +276,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.14" data-path="lecture_14.html">
+        <li class="chapter active" data-level="2.14" data-path="lecture_14.html">
             
                 <a href="lecture_14.html">
             
@@ -321,7 +319,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Lecture 10 - The Logic of Partitions</a>
+        <a href=".." >Lecture 14 - Adjoints, Joins, and Meets</a>
     </h1>
 </div>
 
@@ -336,121 +334,73 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="lecture-10---the-logic-of-partitions">Lecture 10 - The Logic of Partitions</h1>
+                                <h1 id="lecture-13---adjoints-joints-and-meets">Lecture 13 - Adjoints, Joints, and Meets</h1>
 <hr>
-<p>I&apos;ve been explaining how we can create a version of logic starting
-from any poset, which we think of as a poset of &quot;propositions&quot;. There
-are various ways to get our hands on such a poset. One way is to start
-with a set \(X\) and build a poset \(P X\) whose elements are
-subsets of \(X\). This leads to the most traditional form of logic,
-called classical logic. But another way is to start with a set \(X\)
-and build a poset \(\mathcal{E}(X)\) whose elements are &quot;partitions&quot;
-of \(X\). This leads to another form of logic, called the logic of
-partitions.</p>
-<p>What&apos;s a partition? It&apos;s a way of chopping the set \(X\) into
-&quot;parts&quot;. We want each part to be a nonempty subset of \(X\), we want
-these parts to be disjoint, and we want their union to be all of
-\(X\). For example, here are all 52 partitions of a set with 5
-elements:</p>
-<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partitions_of_5.png"></center>
+<p>I&apos;ve spent four lectures on the logic of partitions; you may be
+wondering why.  One reason was to give you examples illustrating this
+important fact:</p>
+<p><strong>Theorem.</strong> Left adjoints preserve joins and right adjoints preserve
+meets.  Suppose \(f : A \to B\) and \(g : B \to A\) are monotone
+functions between posets.  Suppose that \(f\) is the left adjoint of
+\(g\), or equivalently, \(g\) is the right adjoint of \(f\).  If
+the join of \(a,a&apos; \in A\) exists then so does the join of \(f(a),
+f(a&apos;) \in B\), and</p>
+<p><script type="math/tex; ">  f(a \vee a') = f(a) \vee f(a').  </script></p>
+<p>If the meet of \(b,b&apos; \in B\) exists then so does the meet of
+\(g(b), g(b&apos;) \in A\), and</p>
+<p><script type="math/tex; "> g(b \wedge b') = g(b) \wedge g(b'). </script></p>
+<p>The proof is very easy, so this deserves being called a &quot;Theorem&quot; only
+because it&apos;s so fundamental!  I will prove it later, in more
+generality.  Right now let&apos;s see how it&apos;s relevant to what we&apos;ve been
+doing.</p>
+<p>In <a href="https://forum.azimuthproject.org/discussion/1931/lecture-9-chapter-1-adjoints-and-the-logic-of-subsets/p1" target="_blank">Lecture
+9</a>
+we saw something interesting about the subsets.  Given any set \(X\)
+there&apos;s a poset \(P(X)\) consisting of all subsets of \(X\).
+Given any function \(f : X \to Y\) there&apos;s a monotone map</p>
+<p><script type="math/tex; ">   f^* : P(Y) \to P(X) </script></p>
+<p>sending any subset of \(Y\) to its preimage under \(f\).  And we
+saw that \( f^{\ast} \) has both a left adjoint and a right adjoint.
+This means that \( f^{\ast} \) <em>is</em> both a right adjoint and a left
+adjoint.  (Remember: <em>having</em> a left adjoint means <em>being</em> a right
+adjoint, and vice versa.)</p>
+<p>So by our Theorem, we see that \(f^* : P(Y) \to P(X)\) preserves
+both meets and joins!  You can also see this directly - see Puzzle 41
+in <a href="https://forum.azimuthproject.org/discussion/2008/lecture-13-chapter-1-pulling-back-partitions/p1" target="_blank">Lecture
+13</a>.
+But what matters here is the general pattern.</p>
+<p>In <a href="https://forum.azimuthproject.org/discussion/2008/lecture-13-chapter-1-pulling-back-partitions/p1" target="_blank">Lecture
+13</a>
+we also saw something interesting about partitions.  Given any set
+\(X\) there&apos;s a poset \( \mathcal{E}(X)\) consisting of all
+partitions of \(X\).  Given any function \(f : X \to Y\) there&apos;s a
+monotone map</p>
+<p><script type="math/tex; ">   f^* : \mathcal{E}(Y) \to \mathcal{E}(X) </script></p>
+<p>sending any partition of \(Y\) to its pullback along \(f\).  And
+we saw that while \( f^{\ast} \) preserves meets, it does not
+preserve joins!</p>
+<p>So by our Theorem, we see that \(f^* : P(Y) \to P(X)\) <em>cannot</em> be a
+left adjoint.  On the other hand, it <em>might</em> be a right adjoint.</p>
+<p>And indeed it is!  So, this strange difference between the logic of
+subsets and the logic of partitions is really all about adjoints.</p>
+<p><strong>Puzzle 42.</strong> Given a function \(f : X \to Y\) there is a way to
+<strong>push forward</strong> any partition \(P\) on \(X\) and get a partition
+\(f_{!} (P)\) on \(Y\).  In pictures it looks like this:</p>
+<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_pushforward.png"></center>
 
-<p>At the top we see the &quot;coarsest&quot; partition, where all 5 elements are
-in the same part. At the bottom we see the &quot;finest&quot; partition, where
-each element is in its own separate part.</p>
-<p>How can we think of these partitions as &quot;propositions&quot;? Here&apos;s how:
-each partition gives a proposition saying that two elements in the
-same part are &quot;equivalent&quot;, or the same in some way. The coarser the
-partition, the more elements are equivalent.</p>
-<p>For example, imagine you&apos;re a detective trying to solve a case on a
-small island with 5 people on it. At first you don&apos;t know any of them
-are related, so they&apos;re all in separate families, as far as you know:</p>
-<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_finest.png"></center>
-
-<p>But then you start digging into their history. Each time you learn
-that two people are related, you change your partition by putting them
-into the same part:</p>
-<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_less_fine.png"></center>
-
-<p>You keep doing this as secret family relationships are revealed:</p>
-<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_coarser.png"></center>
-
-<p>In this example, as you learn more you move to <em>coarser</em> partitions,
-because your goal is to find relationships between people, and lump
-them in as big bunches as possible. But often people think about
-partition logic a bit differently, where as you learn more you move to
-<em>finer</em> partitions.</p>
-<p>Suppose you are an amateur wine taster learning to distinguish
-different kinds of wine by their taste. At first all wines taste
-alike, so they&apos;re all lumped together:</p>
-<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_coarsest.png"></center>
-
-<p>When you learn to distinguish red and white wines, you move to a finer
-partition:</p>
-<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_less_coarse.png"></center>
-
-<p>This sort of example will fit our story a bit better. We&apos;ll generally
-say that you know more if your partition is <em>finer</em>.</p>
-<p>Now it&apos;s time to define partitions more carefully! A partition of
-\(X\) is a bunch of subsets of \(X\). So, it&apos;s a subset of
-\(P(X)\). Please think about that until it makes sense, or ask
-questions. There are a lot of sets and subsets running around: it can
-be confusing. But here we go:</p>
-<p><strong>Definition.</strong> A <strong>partition</strong> of a set \(X\) is a set \(P
-\subseteq P(X)\) such that:</p>
-<ol>
-<li><p>Each set \(S \in P\) is nonempty.</p>
-</li>
-<li><p>Distinct sets \(S, T \in P\) are disjoint: that is, if \(S \ne
-T\) then \(S \cap T = \emptyset\).</p>
-</li>
-<li><p>The union of all the sets \(S \in P\) is \(X\): that is,</p>
-</li>
-</ol>
-<center><script type="math/tex; ">X = \bigcup_{S \in P} S</script></center>
-
-<p>We call the sets \(S \in P\) the <strong>parts</strong> of the partition.</p>
-<p>I said that each partition \(P\) gives an equivalence relation,
-where two elements of \(X\) are &quot;equivalent&quot; if and only if they&apos;re
-in the same part. Let&apos;s make that precise too:</p>
-<p><strong>Definition.</strong> An <strong>equivalence relation</strong> on a set \(X\) is a
-relation \(\sim\) on \(X\) that is:</p>
-<ol>
-<li><p><strong>Reflexive:</strong> for all \(x \in X\), \(x \sim x\).</p>
-</li>
-<li><p><strong>Transitive:</strong> for all \(x,y,z \in Z\), \(x \sim y\) and \(y
-\sim z\) imply \(x \sim z\).</p>
-</li>
-<li><p><strong>Symmetric:</strong> for all \(x,y \in X\), \(x \sim y\) implies \(y
-\sim x.\)</p>
-</li>
-</ol>
-<p><strong>Puzzle 28.</strong> Show that if \(P\) is a partition of a set \(X\),
-and we define a relation \(\sim_P\) on \(X\) as follows:</p>
-<center><script type="math/tex; ">x \sim_P y \textrm{ if and only if }  x, y \in S \textrm{ for some } S \in P,</script></center>
-
-<p>then \(\sim_P\) is an equivalence relation.</p>
-<p><strong>Puzzle 29.</strong> Show that if \(\sim\) is an equivalence relation on a
-set \(X\), we can define a partition \(P_\sim\) on \(X\) whose
-parts are precisely the sets of the form</p>
-<center><script type="math/tex; ">S_x = \{y \in X : \; y \sim x \}</script></center>
-
-<p>with \(x \in X\). We call \(S_x\) the <strong>equivalence class</strong> of
-\(x\).</p>
-<p><strong>Puzzle 31.</strong> Show that the previous two puzzles give a one-to-one
-correspondence between partitions of \(X\) and equivalence relations
-on \(X\).</p>
-<p><strong>Puzzle 32.</strong> Proposition 1.11 of <em><a href="http://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf" target="_blank">Seven
-Sketches</a></em>
-asserts that there is a one-to-one correspondence between partitions
-of \(X\) and equivalence relations on \(X\). However, in the
-current version of the book this proposition is false! Nonetheless,
-the statement in Puzzle 31 is correct. How is this possible? (Hint:
-you have to read their definitions quite carefully. This is good
-practice in reading mathematics.)</p>
-<p><strong>Puzzle 33.</strong> Is an equivalence relation always a preorder?</p>
+<p>although this is not the most exciting example, since here
+\(f<em>{!}(P)\) has just one part.  Figure out the precise general
+description of \(f</em>{!} (P)\).  If you get stuck read Section 1.5.2
+of <em><a href="http://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf" target="_blank">Seven
+Sketches</a></em>.</p>
+<p><strong>Puzzle 43.</strong> Show that for any function \(f : X \to Y\), pushing
+forward partitions along \(f\) gives a monotone map</p>
+<p><script type="math/tex; ">  f_{!} : \mathcal{E}(X) \to \mathcal{E}(Y) .</script></p>
+<p><strong>Puzzle 44.</strong> Show that for any function \(f : X \to Y\), \(f^* :
+\mathcal{E}(Y) \to \mathcal{E}(X)\) is the right adjoint of \(f_{!}:
+\mathcal{E}(X) \to \mathcal{E}(Y)\).</p>
 <p><strong><a href="http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course" target="_blank">To read other lectures go here.</a></strong></p>
-<hr>
-<p><a href="https://forum.azimuthproject.org/discussion/1963/lecture-10-chapter-1-the-logic-of-partitions/p1" target="_blank">Click here to read the original discussion.</a></p>
+<p><a href="https://forum.azimuthproject.org/discussion/2013/lecture-14-chapter-1-adjoints-joins-and-meets/p1" target="_blank">Click here to read the original discussion.</a></p>
 <hr>
 <h2 id="license">License</h2>
 <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
@@ -481,14 +431,10 @@ practice in reading mathematics.)</p>
 
             
                 
-                <a href="lecture_9.html" class="navigation navigation-prev " aria-label="Previous page: Lecture 9 - Adjoints and the Logic of Subsets">
+                <a href="lecture_13.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Lecture 13 - Pulling Back Partitions">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="lecture_11.html" class="navigation navigation-next " aria-label="Next page: Lecture 11 - The Poset of Partitions">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -497,7 +443,7 @@ practice in reading mathematics.)</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 10 - The Logic of Partitions","level":"2.10","depth":1,"next":{"title":"Lecture 11 - The Poset of Partitions","level":"2.11","depth":1,"path":"chapter_1/lecture_11.md","ref":"chapter_1/lecture_11.md","articles":[]},"previous":{"title":"Lecture 9 - Adjoints and the Logic of Subsets","level":"2.9","depth":1,"path":"chapter_1/lecture_9.md","ref":"chapter_1/lecture_9.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_10.md","mtime":"2018-04-14T14:33:40.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:34:52.370Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"previous":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"path":"chapter_1/lecture_13.md","ref":"chapter_1/lecture_13.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_14.md","mtime":"2018-04-14T14:33:40.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:34:52.370Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
