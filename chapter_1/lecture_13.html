@@ -350,11 +350,11 @@ part of \(P\), and so on.</p>
 <p>However, this does <em>not</em> work for the join!</p>
 <p><script type="math/tex; "> \textbf{THIS IS FALSE: } \; x \sim_{P \vee Q} x' \textrm{ if and only if } x \sim_P x' \textrm{ or } x \sim_Q x'  .</script></p>
 <p>To understand this better, the key is to think about the &quot;inclusion&quot;</p>
-<p><script type="math/tex; ">  i : \\{x,x'\\} \to X , </script></p>
+<p><script type="math/tex; ">  i : \{x,x'\} \to X , </script></p>
 <p>that is, the function sending \(x\) and \(x&apos;\) to themselves
 thought of as elements of \(X\).  We&apos;ll soon see that any partition
 \(P\) of \(X\) can be &quot;pulled back&quot; to a partition
-\(i^{\ast}(P)\) on the little set \( \{x,x&apos;\} \).  And we&apos;ll see
+\(i^{\ast}(P)\) on the little set \( {x,x&apos;} \).  And we&apos;ll see
 that our observation can be restated as follows:</p>
 <p><script type="math/tex; ">   i^{\ast}(P \wedge Q) = i^{\ast}(P) \wedge i^{\ast}(Q)  </script></p>
 <p>but</p>
@@ -373,7 +373,7 @@ of all elements of \(X\) that map to \(S\).  This set is just the
 <strong>preimage</strong> of \(S\) under \(f\), which we met in <a href="https://forum.azimuthproject.org/discussion/1931/lecture-9-chapter-1-adjoints-and-the-logic-of-subsets/p1" target="_blank">Lecture
 9</a>.
 We called it</p>
-<p><script type="math/tex; ">   f^{\ast}(S) = \\{x \in X: \; f(x) \in S \\}. </script></p>
+<p><script type="math/tex; ">   f^{\ast}(S) = \{x \in X: \; f(x) \in S \}. </script></p>
 <p>So beware: we are now using the symbol \(f^{\ast}\) in two ways: for
 the preimage of a subset and for the pullback of a partition.  But
 these two ways fit together very nicely, so it&apos;ll be okay.</p>
@@ -381,7 +381,7 @@ these two ways fit together very nicely, so it&apos;ll be okay.</p>
 <p><strong>Definition.</strong> Given a function \(f : X \to Y\) and a partition
 \(P\) of \(Y\), define the <strong>pullback</strong> of \(P\) along \(f\)
 to be this partition of \(X\):</p>
-<p><script type="math/tex; ">  f^{\ast}(P) = \\{ f^{\ast}(S) : \; S \in P \\} .</script></p>
+<p><script type="math/tex; ">  f^{\ast}(P) = \{ f^{\ast}(S) : \; S \in P \} .</script></p>
 <p><strong>Puzzle 40.</strong> Show that \( f^{\ast}(P) \) really is a partition
 using the fact that \(P\) is.  It&apos;s fun to prove this using
 properties of the preimage map \( f^{\ast} : P(Y) \to P(X) \).</p>
@@ -414,23 +414,23 @@ two partitions:</p>
 <center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partitions_named.png"></center>
 
 <p>They are partitions on the set</p>
-<p><script type="math/tex; "> (Y = \\{11, 12, 13, 21, 22, 23 \\}. </script></p>
-<p>Take \(X = \{11,22\} \) and let \(i : X \to Y \) be the
+<p><script type="math/tex; "> (Y = \{11, 12, 13, 21, 22, 23 \}. </script></p>
+<p>Take \(X = {11,22} \) and let \(i : X \to Y \) be the
 inclusion of \(X\) into \(Y\), meaning that</p>
 <p><script type="math/tex; ">  i(11) = 11, \quad i(22) = 22 . </script></p>
 <p>Then compute everything!  11 and 22 are in different parts of
 \(i^{\ast}(P)\):</p>
-<p><script type="math/tex; ">  i^{\ast}(P) = \\{ \\{11\\}, \\{22\\}  \\} </script></p>
+<p><script type="math/tex; ">  i^{\ast}(P) = \{ \{11\}, \{22\}  \} </script></p>
 <p>They&apos;re also in different parts of \(i^{\ast}(Q)\):</p>
-<p><script type="math/tex; ">  i^{\ast}(Q) = \\{ \\{11\\}, \\{22\\}  \\} </script></p>
+<p><script type="math/tex; ">  i^{\ast}(Q) = \{ \{11\}, \{22\}  \} </script></p>
 <p>Thus, we have</p>
-<p><script type="math/tex; "> i^{\ast}(P) \vee  i^{\ast}(Q) = \\{ \\{11\\}, \\{22\\}  \\} .</script></p>
+<p><script type="math/tex; "> i^{\ast}(P) \vee  i^{\ast}(Q) = \{ \{11\}, \{22\}  \} .</script></p>
 <p>On the other hand, the join \(P \vee Q \) has just one part:</p>
-<p><script type="math/tex; "> P \vee Q = \\{Y\\} . </script></p>
+<p><script type="math/tex; "> P \vee Q = \{Y\} . </script></p>
 <p>If you don&apos;t see why, figure out the finest partition that&apos;s coarser
 than \(P\) and \(Q\) - that&apos;s \(P \vee Q \).  So, the pullback
 \(f^{\ast}(P) \vee f^{\ast}(Q) \) has just one part:</p>
-<p><script type="math/tex; ">  f^{\ast}(P \vee Q) = \\{ \\{11, 22 \\} \\} .</script></p>
+<p><script type="math/tex; ">  f^{\ast}(P \vee Q) = \{ \{11, 22 \} \} .</script></p>
 <p>So, we have</p>
 <p><script type="math/tex; ">    f^{\ast}(P \wedge Q) \ne f^{\ast}(P) \wedge f^{\ast}(Q)  </script></p>
 <p>as desired.  \( \quad \blacksquare \)</p>
@@ -498,7 +498,7 @@ in \(X\).  Given \(S,T \in P(Y) \), is it always true that</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"next":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"path":"chapter_1/lecture_14.md","ref":"chapter_1/lecture_14.md","articles":[]},"previous":{"title":"Lecture 12 - Generative Effects","level":"2.12","depth":1,"path":"chapter_1/lecture_12.md","ref":"chapter_1/lecture_12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_13.md","mtime":"2018-04-14T14:33:40.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:34:52.370Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"next":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"path":"chapter_1/lecture_14.md","ref":"chapter_1/lecture_14.md","articles":[]},"previous":{"title":"Lecture 12 - Generative Effects","level":"2.12","depth":1,"path":"chapter_1/lecture_12.md","ref":"chapter_1/lecture_12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_13.md","mtime":"2018-04-14T14:41:38.229Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:42:49.468Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
