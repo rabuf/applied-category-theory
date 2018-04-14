@@ -4,7 +4,7 @@ node_js:
 install:
   - npm install gitbook
 script:
-  - sh deploy.sh
+  - bash deploy.sh
 env:
   global:
     - KEY_FILE="deploy_key"
