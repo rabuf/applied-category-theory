@@ -18,7 +18,7 @@ these parts to be disjoint, and we want their union to be all of
 \\(X\\). For example, here are all 52 partitions of a set with 5
 elements:
 
-<center><img src = "partitions_of_5.png"></center>
+<center><img src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partitions_of_5.png"></center>
 
 At the top we see the "coarsest" partition, where all 5 elements are
 in the same part. At the bottom we see the "finest" partition, where
@@ -33,38 +33,55 @@ For example, imagine you're a detective trying to solve a case on a
 small island with 5 people on it. At first you don't know any of them
 are related, so they're all in separate families, as far as you know:
 
-<center><img src = "partition_of_5_finest.png"></center>
+<center><img src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_finest.png"></center>
 
 But then you start digging into their history. Each time you learn
 that two people are related, you change your partition by putting them
 into the same part:
 
-<center><img src = "partition_of_5_less_fine.png"></center>
+<center><img src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_less_fine.png"></center>
 
 You keep doing this as secret family relationships are revealed:
 
-<center><img src = "partition_of_5_coarser.png"></center>
+<center><img src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_coarser.png"></center>
 
-So as you learn more, you "climb up the poset of partitions", moving
-to coarser and coarser partitions. That's how it works in partition
-logic.
+In this example, as you learn more you move to _coarser_ partitions,
+because your goal is to find relationships between people, and lump
+them in as big bunches as possible. But often people think about
+partition logic a bit differently, where as you learn more you move to
+_finer_ partitions.
 
-Let's make this precise! A partition of \\(X\\) is a bunch of subsets
-of \\(X\\). So, it's a subset of \\(P(X)\\). Please think about that
-until it makes sense, or ask questions! There are a lot of sets and
-subsets running around: it can be confusing. But here we go:
+Suppose you are an amateur wine taster learning to distinguish
+different kinds of wine by their taste. At first all wines taste
+alike, so they're all lumped together:
+
+<center><img src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_coarsest.png"></center>
+
+When you learn to distinguish red and white wines, you move to a finer
+partition:
+
+<center><img src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_of_5_less_coarse.png"></center>
+
+This sort of example will fit our story a bit better. We'll generally
+say that you know more if your partition is _finer_.
+
+Now it's time to define partitions more carefully! A partition of
+\\(X\\) is a bunch of subsets of \\(X\\). So, it's a subset of
+\\(P(X)\\). Please think about that until it makes sense, or ask
+questions. There are a lot of sets and subsets running around: it can
+be confusing. But here we go:
 
 **Definition.** A **partition** of a set \\(X\\) is a set \\(P
 \subseteq P(X)\\) such that:
 
-1. Each set \\(S \in P \\) is nonempty.
+1. Each set \\(S \in P\\) is nonempty.
 
 2. Distinct sets \\(S, T \in P\\) are disjoint: that is, if \\(S \ne
-   T\\) then \\(S \cap T = \emptyset \\).
+   T\\) then \\(S \cap T = \emptyset\\).
 
 3. The union of all the sets \\(S \in P\\) is \\(X\\): that is,
 
-<center>$$  X = \bigcup_{S \in P} S $$</center>
+<center>$$X = \bigcup_{S \in P} S$$</center>
 
 We call the sets \\(S \in P\\) the **parts** of the partition.
 
@@ -77,7 +94,7 @@ relation \\(\sim\\) on \\(X\\) that is:
 
 1. **Reflexive:** for all \\(x \in X\\), \\(x \sim x\\).
 
-2. **Transitive:** for all \\(x,y,z \in Z\\), \\(x \sim y \\) and \\(y
+2. **Transitive:** for all \\(x,y,z \in Z\\), \\(x \sim y\\) and \\(y
    \sim z\\) imply \\(x \sim z\\).
 
 3. **Symmetric:** for all \\(x,y \in X\\), \\(x \sim y\\) implies \\(y
