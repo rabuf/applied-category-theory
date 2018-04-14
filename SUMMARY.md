@@ -16,3 +16,5 @@
 * [Lecture 10 - The Logic of Partitions](chapter_1/lecture_10.md)
 * [Lecture 11 - The Poset of Partitions](chapter_1/lecture_11.md)
 * [Lecture 12 - Generative Effects](chapter_1/lecture_12.md)
+* [Lecture 13 - Pulling Back Partitions](chapter_1/lecture_13.md)
+* [Lecture 14 - Adjoints, Joins, and Meets](chapter_1/lecture_14.md)
