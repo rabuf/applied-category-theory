@@ -313,7 +313,7 @@
                                 <h1 id="lecture-11---the-poset-of-partitions">Lecture 11 - The Poset of Partitions</h1>
 <hr>
 <p>Last time we learned about <em>partitions</em> of a set: ways of chopping it
-into disjoint nonempty sets called &apos;parts&apos;.</p>
+into disjoint nonempty sets called &quot;parts&quot;.</p>
 <center><img width="300" src="http://math.ucr.edu/home/baez/mathematical/7_sketches/set_partition.png"></center>
 
 <p>We also learned about <em>equivalence relations</em> on a set: relations that
@@ -328,7 +328,7 @@ with equivalence relations. This makes it easy to define a poset of
 partitions, which is the key step toward doing <em>logic</em> with
 partitions.</p>
 <p>Here&apos;s how it goes. For any set \(X\), \(\mathcal{E}(X)\) is the
-set of partitions of \(X\).  For any partition \(P\) of \(X\),
+set of partitions of \(X\). For any partition \(P\) of \(X\),
 let \(\sim_P\) be the corresponding equivalence relation.</p>
 <p><strong>Definition.</strong> We say that a partition \(P\) of \(X\) is
 <strong>finer</strong> than a partition \(Q\) of \(X\) if</p>
@@ -338,13 +338,13 @@ let \(\sim_P\) be the corresponding equivalence relation.</p>
 we also say \(Q\) is <strong>coarser</strong> than \(P\).</p>
 <p>This makes it incredibly easy to get our hands on the poset of
 partitions!</p>
-<p><strong>Proposition.</strong> \(\mathcal{E}(X), \le\) is a poset.</p>
+<p><strong>Proposition.</strong> \((\mathcal{E}(X), \le)\) is a poset.</p>
 <p><strong>Proof.</strong> We just need to show that the relation \(\le\) is
-reflexive and transitive. Since</p>
+reflexive, transitive and antisymmetric. Since</p>
 <center><script type="math/tex; ">x \sim_P y \textrm{ implies } x \sim_P y</script></center>
 
 <p>for all \(x,y \in X\), we have</p>
-<center><script type="math/tex; ">  P \le P </script></center>
+<center><script type="math/tex; ">P \le P</script></center>
 
 <p>so the relation \(\le\) is reflexive.</p>
 <p>If</p>
@@ -359,16 +359,34 @@ reflexive and transitive. Since</p>
 <p>So,</p>
 <center><script type="math/tex; ">P \le Q \textrm{ and } Q \le R \textrm{ implies } P \le R</script></center>
 
-<p>so the relation \(\le\) is transitive. \(\blacksquare\)</p>
-<p>That proof was as easy as sliding down a slide covered with grease!
-It&apos;s what I call a &quot;follow your nose&quot; proof - to create it, you just
-carefully write down what you need to show, use some definitions to
-figure out what it really means, and notice that it&apos;s true.</p>
-<p>Here&apos;s a picture of the poset of partitions of a 3-element set:</p>
+<p>so the relation \(\le\) is transitive.</p>
+<p>Finally, to show that \(\le\) is antisymmetric, assume</p>
+<center><script type="math/tex; ">P \le Q \textrm{ and } Q \le P.</script></center>
+
+<p>Then by definition</p>
+<center><script type="math/tex; ">x \sim_P y \textrm{ implies } x \sim_Q y</script></center>
+
+<p>and</p>
+<center><script type="math/tex; ">x \sim_Q y \textrm{ implies } x \sim_P y</script></center>
+
+<p>or in other words,</p>
+<p>&lt;/center&gt;<script type="math/tex; ">x \sim_P y \textrm{ if and only if } x \sim_Q y.</script>&lt;/center&gt;</p>
+<p>This means that the relations \(\sim_P\) and \(\sim_Q\) are equal,
+so \(P = Q\) as desired. \(\quad \blacksquare\)</p>
+<p>That proof was as easy as slipping down a slide covered with grease!
+It&apos;s what I call a &quot;follow your nose&quot; proof: to create it, you just
+carefully write down what you need to show, unravel the definitions to
+figure out what that really means, and notice that it&apos;s true.</p>
+<p>Here&apos;s another way to tell if one partition is finer than another:</p>
+<p><strong>Puzzle 34.</strong> Given two partitions \(P\) and \(Q\) of a set
+\(X\), show that \(P \le Q\) if and only if every part of \(P\)
+is contained in a part of \(Q\).</p>
+<p>Using this, you can easily work out the poset of partitions of a
+3-element set:</p>
 <center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_hasse_diagram.png"></center>
 
-<p>It looks simple. But that&apos;s deceptive! For a 4-element set we get this
-poset of partitions:</p>
+<p>It looks simple. But that&apos;s deceptive! For a 4-element set we get
+this poset of partitions:</p>
 <center><img width="400" src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partitions_of_4.png"></center>
 
 <p>It&apos;s much more complicated than the poset of <em>subsets</em> of a 4-element
@@ -387,11 +405,11 @@ Bell numbers go like this:</p>
 <p>Another example: poset of subsets looks the same when you flip it
 upside down. That&apos;s because any subset \(S \subseteq X\) has a
 <strong>complement</strong></p>
-<center><script type="math/tex; ">X - S = \{x \in X : \; x \notin S \} .</script></center>
+<center><script type="math/tex; ">X - S = \{x \in X : \; x \notin S \}.</script></center>
 
 <p>In the logic of subsets this gives <strong>negation</strong>: if a subset \(S
 \subseteq X\) corresponds to some proposition \(P\), its complement
-\(X - S\) corresponds to the proposition \(\neg P \), which is how
+\(X - S\) corresponds to the proposition \(\neg P\), which is how
 logicians write &quot;not \(P\) &quot;.</p>
 <p>But the poset of partitions does <em>not</em> look the same when you flip it
 upside down:</p>
@@ -404,9 +422,9 @@ than classical logic. To read more about it, go here:</p>
 of the logic of subsets</a>.</li>
 </ul>
 <p>Partition logic still has joins and meets, so I&apos;ll talk about those
-next time. We should also see how a function \(f : X \to Y \) gives
-a monotone function \(f^<em> : \mathcal{E}(Y) \to \mathcal{E}(X)\).
-And we should see if \(f^</em>\) has left or right adjoints!</p>
+next time. We should also see how a function \(f : X \to Y\) gives a
+monotone function \(f^<em> : \mathcal{E}(Y) \to \mathcal{E}(X)\). And
+we should see if \(f^</em>\) has left or right adjoints!</p>
 <p>This leads up to the punchline of Chapter 1: the idea of &quot;generative
 effects&quot;. In a nutshell, partition logic has &quot;generative effects&quot;
 because the right adjoint of \(f^*\) doesn&apos;t preserve joins. This
@@ -461,7 +479,7 @@ fact about reality.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 11 - The Poset of Partitions","level":"2.11","depth":1,"next":{"title":"Lecture 12 - Generative Effects","level":"2.12","depth":1,"path":"chapter_1/lecture_12.md","ref":"chapter_1/lecture_12.md","articles":[]},"previous":{"title":"Lecture 10 - The Logic of Partitions","level":"2.10","depth":1,"path":"chapter_1/lecture_10.md","ref":"chapter_1/lecture_10.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_11.md","mtime":"2018-04-14T14:01:57.538Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:03:20.563Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 11 - The Poset of Partitions","level":"2.11","depth":1,"next":{"title":"Lecture 12 - Generative Effects","level":"2.12","depth":1,"path":"chapter_1/lecture_12.md","ref":"chapter_1/lecture_12.md","articles":[]},"previous":{"title":"Lecture 10 - The Logic of Partitions","level":"2.10","depth":1,"path":"chapter_1/lecture_10.md","ref":"chapter_1/lecture_10.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_11.md","mtime":"2018-04-14T14:17:06.155Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:18:18.912Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
