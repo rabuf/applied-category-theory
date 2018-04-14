@@ -1,11 +1,14 @@
 #!/bin/bash
 
-
+pwd
+git config remote.origin.url
 rev=$(git rev-parse --short HEAD)
 
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
-
+echo $rev
+echo $REPO
+echo $SSH_REPO
 ssh-add $KEY_FILE
 
 gitbook install && gitbook build
