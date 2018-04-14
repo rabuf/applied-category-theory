@@ -20,5 +20,4 @@ git checkout gh-pages
 rm .travis.yml deploy.sh deploy_key.enc
 git add .
 git commit -m "Rebuild pages at ${rev}"
-ls *
-#git push upstream gh-pages
+git push upstream gh-pages
