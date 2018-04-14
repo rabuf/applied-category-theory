@@ -1,4 +1,4 @@
-# Lecture 13 - Adjoints, Joints, and Meets
+# Lecture 14 - Adjoints, Joints, and Meets
 
 ---
 

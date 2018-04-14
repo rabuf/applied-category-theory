@@ -21,12 +21,12 @@ $$ \textbf{THIS IS FALSE: } \; x \sim_{P \vee Q} x' \textrm{ if and only if } x 
 
 To understand this better, the key is to think about the "inclusion"
 
-$$  i : \\{x,x'\\} \to X , $$
+$$  i : \{x,x'\} \to X , $$
 
 that is, the function sending \\(x\\) and \\(x'\\) to themselves
 thought of as elements of \\(X\\).  We'll soon see that any partition
 \\(P\\) of \\(X\\) can be "pulled back" to a partition
-\\(i^{\ast}(P)\\) on the little set \\( \\{x,x'\\} \\).  And we'll see
+\\(i^{\ast}(P)\\) on the little set \\( \{x,x'\} \\).  And we'll see
 that our observation can be restated as follows:
 
 $$   i^{\ast}(P \wedge Q) = i^{\ast}(P) \wedge i^{\ast}(Q)  $$
@@ -53,7 +53,7 @@ of all elements of \\(X\\) that map to \\(S\\).  This set is just the
 9](https://forum.azimuthproject.org/discussion/1931/lecture-9-chapter-1-adjoints-and-the-logic-of-subsets/p1).
 We called it
 
-$$   f^{\ast}(S) = \\{x \in X: \; f(x) \in S \\}. $$
+$$   f^{\ast}(S) = \{x \in X: \; f(x) \in S \}. $$
 
 So beware: we are now using the symbol \\(f^{\ast}\\) in two ways: for
 the preimage of a subset and for the pullback of a partition.  But
@@ -65,7 +65,7 @@ Summarizing:
 \\(P\\) of \\(Y\\), define the **pullback** of \\(P\\) along \\(f\\)
 to be this partition of \\(X\\):
 
-$$  f^{\ast}(P) = \\{ f^{\ast}(S) : \; S \in P \\} .$$
+$$  f^{\ast}(P) = \{ f^{\ast}(S) : \; S \in P \} .$$
 
 **Puzzle 40.** Show that \\( f^{\ast}(P) \\) really is a partition
 using the fact that \\(P\\) is.  It's fun to prove this using
@@ -120,9 +120,9 @@ two partitions:
 
 They are partitions on the set
 
-$$ (Y = \\{11, 12, 13, 21, 22, 23 \\}. $$
+$$ (Y = \{11, 12, 13, 21, 22, 23 \}. $$
 
-Take \\(X = \\{11,22\\} \\) and let \\(i : X \to Y \\) be the
+Take \\(X = \{11,22\} \\) and let \\(i : X \to Y \\) be the
 inclusion of \\(X\\) into \\(Y\\), meaning that
 
 $$  i(11) = 11, \quad i(22) = 22 . $$
@@ -130,25 +130,25 @@ $$  i(11) = 11, \quad i(22) = 22 . $$
 Then compute everything!  11 and 22 are in different parts of
 \\(i^{\ast}(P)\\):
 
-$$  i^{\ast}(P) = \\{ \\{11\\}, \\{22\\}  \\} $$
+$$  i^{\ast}(P) = \{ \{11\}, \{22\}  \} $$
 
 They're also in different parts of \\(i^{\ast}(Q)\\):
 
-$$  i^{\ast}(Q) = \\{ \\{11\\}, \\{22\\}  \\} $$
+$$  i^{\ast}(Q) = \{ \{11\}, \{22\}  \} $$
 
 Thus, we have
 
-$$ i^{\ast}(P) \vee  i^{\ast}(Q) = \\{ \\{11\\}, \\{22\\}  \\} .$$
+$$ i^{\ast}(P) \vee  i^{\ast}(Q) = \{ \{11\}, \{22\}  \} .$$
 
 On the other hand, the join \\(P \vee Q \\) has just one part:
 
-$$ P \vee Q = \\{Y\\} . $$
+$$ P \vee Q = \{Y\} . $$
 
 If you don't see why, figure out the finest partition that's coarser
 than \\(P\\) and \\(Q\\) - that's \\(P \vee Q \\).  So, the pullback
 \\(f^{\ast}(P) \vee f^{\ast}(Q) \\) has just one part:
 
-$$  f^{\ast}(P \vee Q) = \\{ \\{11, 22 \\} \\} .$$
+$$  f^{\ast}(P \vee Q) = \{ \{11, 22 \} \} .$$
 
 So, we have
 
