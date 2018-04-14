@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - stable
 install:
-  - npm install gitbook
+  - npm install gitbook-cli -g
 script:
   - bash deploy.sh
 env:
