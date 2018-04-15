@@ -81,7 +81,7 @@ and
 
 or in other words,
 
-</center>$$x \sim_P y \textrm{ if and only if } x \sim_Q y.$$</center>
+<center>$$x \sim_P y \textrm{ if and only if } x \sim_Q y.$$</center>
 
 This means that the relations \\(\sim_P\\) and \\(\sim_Q\\) are equal,
 so \\(P = Q\\) as desired. \\(\quad \blacksquare\\)
@@ -147,7 +147,7 @@ than classical logic. To read more about it, go here:
 
 Partition logic still has joins and meets, so I'll talk about those
 next time. We should also see how a function \\(f : X \to Y\\) gives a
-monotone function \\(f^* : \mathcal{E}(Y) \to \mathcal{E}(X)\\). And
+monotone function $$f^* : \mathcal{E}(Y) \to \mathcal{E}(X)$$. And
 we should see if \\(f^*\\) has left or right adjoints!
 
 This leads up to the punchline of Chapter 1: the idea of "generative
