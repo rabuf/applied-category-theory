@@ -336,70 +336,6 @@
                                 
                                 <h1 id="lecture-14---adjoints-joints-and-meets">Lecture 14 - Adjoints, Joints, and Meets</h1>
 <hr>
-<p>I&apos;ve spent four lectures on the logic of partitions; you may be
-wondering why.  One reason was to give you examples illustrating this
-important fact:</p>
-<p><strong>Theorem.</strong> Left adjoints preserve joins and right adjoints preserve
-meets.  Suppose \(f : A \to B\) and \(g : B \to A\) are monotone
-functions between posets.  Suppose that \(f\) is the left adjoint of
-\(g\), or equivalently, \(g\) is the right adjoint of \(f\).  If
-the join of \(a,a&apos; \in A\) exists then so does the join of \(f(a),
-f(a&apos;) \in B\), and</p>
-<p><script type="math/tex; ">  f(a \vee a') = f(a) \vee f(a').  </script></p>
-<p>If the meet of \(b,b&apos; \in B\) exists then so does the meet of
-\(g(b), g(b&apos;) \in A\), and</p>
-<p><script type="math/tex; "> g(b \wedge b') = g(b) \wedge g(b'). </script></p>
-<p>The proof is very easy, so this deserves being called a &quot;Theorem&quot; only
-because it&apos;s so fundamental!  I will prove it later, in more
-generality.  Right now let&apos;s see how it&apos;s relevant to what we&apos;ve been
-doing.</p>
-<p>In <a href="https://forum.azimuthproject.org/discussion/1931/lecture-9-chapter-1-adjoints-and-the-logic-of-subsets/p1" target="_blank">Lecture
-9</a>
-we saw something interesting about the subsets.  Given any set \(X\)
-there&apos;s a poset \(P(X)\) consisting of all subsets of \(X\).
-Given any function \(f : X \to Y\) there&apos;s a monotone map</p>
-<p><script type="math/tex; ">   f^* : P(Y) \to P(X) </script></p>
-<p>sending any subset of \(Y\) to its preimage under \(f\).  And we
-saw that \( f^{\ast} \) has both a left adjoint and a right adjoint.
-This means that \( f^{\ast} \) <em>is</em> both a right adjoint and a left
-adjoint.  (Remember: <em>having</em> a left adjoint means <em>being</em> a right
-adjoint, and vice versa.)</p>
-<p>So by our Theorem, we see that \(f^* : P(Y) \to P(X)\) preserves
-both meets and joins!  You can also see this directly - see Puzzle 41
-in <a href="https://forum.azimuthproject.org/discussion/2008/lecture-13-chapter-1-pulling-back-partitions/p1" target="_blank">Lecture
-13</a>.
-But what matters here is the general pattern.</p>
-<p>In <a href="https://forum.azimuthproject.org/discussion/2008/lecture-13-chapter-1-pulling-back-partitions/p1" target="_blank">Lecture
-13</a>
-we also saw something interesting about partitions.  Given any set
-\(X\) there&apos;s a poset \( \mathcal{E}(X)\) consisting of all
-partitions of \(X\).  Given any function \(f : X \to Y\) there&apos;s a
-monotone map</p>
-<p><script type="math/tex; ">   f^* : \mathcal{E}(Y) \to \mathcal{E}(X) </script></p>
-<p>sending any partition of \(Y\) to its pullback along \(f\).  And
-we saw that while \( f^{\ast} \) preserves meets, it does not
-preserve joins!</p>
-<p>So by our Theorem, we see that \(f^* : P(Y) \to P(X)\) <em>cannot</em> be a
-left adjoint.  On the other hand, it <em>might</em> be a right adjoint.</p>
-<p>And indeed it is!  So, this strange difference between the logic of
-subsets and the logic of partitions is really all about adjoints.</p>
-<p><strong>Puzzle 42.</strong> Given a function \(f : X \to Y\) there is a way to
-<strong>push forward</strong> any partition \(P\) on \(X\) and get a partition
-\(f_{!} (P)\) on \(Y\).  In pictures it looks like this:</p>
-<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_pushforward.png"></center>
-
-<p>although this is not the most exciting example, since here
-\(f<em>{!}(P)\) has just one part.  Figure out the precise general
-description of \(f</em>{!} (P)\).  If you get stuck read Section 1.5.2
-of <em><a href="http://math.mit.edu/~dspivak/teaching/sp18/7Sketches.pdf" target="_blank">Seven
-Sketches</a></em>.</p>
-<p><strong>Puzzle 43.</strong> Show that for any function \(f : X \to Y\), pushing
-forward partitions along \(f\) gives a monotone map</p>
-<p><script type="math/tex; ">  f_{!} : \mathcal{E}(X) \to \mathcal{E}(Y) .</script></p>
-<p><strong>Puzzle 44.</strong> Show that for any function \(f : X \to Y\), \(f^* :
-\mathcal{E}(Y) \to \mathcal{E}(X)\) is the right adjoint of \(f_{!}:
-\mathcal{E}(X) \to \mathcal{E}(Y)\).</p>
-<p><strong><a href="http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course" target="_blank">To read other lectures go here.</a></strong></p>
 <p><a href="https://forum.azimuthproject.org/discussion/2013/lecture-14-chapter-1-adjoints-joins-and-meets/p1" target="_blank">Click here to read the original discussion.</a></p>
 <hr>
 <h2 id="license">License</h2>
@@ -443,7 +379,7 @@ forward partitions along \(f\) gives a monotone map</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"previous":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"path":"chapter_1/lecture_13.md","ref":"chapter_1/lecture_13.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_14.md","mtime":"2018-04-14T14:41:38.229Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-14T14:42:49.468Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"previous":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"path":"chapter_1/lecture_13.md","ref":"chapter_1/lecture_13.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_14.md","mtime":"2018-04-15T16:27:30.353Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-15T16:29:48.505Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
