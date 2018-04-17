@@ -1,5 +1,7 @@
 # Lecture 4 - Galois Connections Part 1
+
 ---
+
 Okay, now let's get to the cool part: Galois connections. Before he
 died in a duel, the young [&Eacute;variste
 Galois](https://en.wikipedia.org/wiki/%C3%89variste_Galois) proved
@@ -9,9 +11,10 @@ there's nothing like the quadratic formula for equations like:
 <center>$$ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0.$$</center>
 
 He used a trick for converting one view of a problem into another, and
-then converting the other view back into the original one. And by
-now, we've extracted the essence of this trick and dubbed it a "Galois
-connection". It's far more general than Galois dreamed. More [here.](https://pdfs.semanticscholar.org/de4c/0a1a2269ddee82bd2d21f1ae23cdadb09cd7.pdf)
+then converting the other view back into the original one. And by now,
+we've extracted the essence of this trick and dubbed it a "Galois
+connection". It's far more general than Galois dreamed. More
+[here.](https://pdfs.semanticscholar.org/de4c/0a1a2269ddee82bd2d21f1ae23cdadb09cd7.pdf)
 
 Remember, a **[preorder](https://en.wikipedia.org/wiki/Preorder)** is
 a set \\(A\\) with a relation \\(\le_A\\) that's reflexive and
@@ -29,7 +32,7 @@ B\\) such that
 for all elements \\(x,y \in A\\),
 
 **Puzzle 10.** There are many examples of monotone maps between
-posets.  List a few interesting ones!
+posets. List a few interesting ones!
 
 **Definition.** Given preorders \\((A,\le_A)\\) and \\((B,\le_B)\\), a
 **[Galois
@@ -61,7 +64,7 @@ definition on the table right away.
 Here's one easy example to get you started. Let \\(\mathbb{N}\\) be
 the set of natural numbers with its usual notion of \\(\le\\).
 There's a function \\(f : \mathbb{N} \to \mathbb{N}\\) with \\(f(x) =
-2x\\). This function doesn't have an inverse. But:
+2x \\). This function doesn't have an inverse. But:
 
 **Puzzle 12.** Find a right adjoint for \\(f\\): that is, a function
 \\(g : \mathbb{N} \to \mathbb{N}\\) with
@@ -77,6 +80,8 @@ find?
 <center>$$g(m) \le n  \textrm{ if and only if } m \le  f(n)$$</center>
 
 for all \\(m,n \in \mathbb{N}\\). How many left adjoints can you find?
+
+**[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
 
 ---
 

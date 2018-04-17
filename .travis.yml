@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - stable
+install:
+  - npm install gitbook-cli -g
+script:
+  - bash deploy.sh
+env:
+  global:
+    - KEY_FILE="deploy_key"
+    - GIT_EMAIL="jtsummers@gmail.com"
+before_install:
+- openssl aes-256-cbc -K $encrypted_50a456097cc2_key -iv $encrypted_50a456097cc2_iv
+  -in deploy_key.enc -out deploy_key -d
+cache:
+  directories:
+    - "node_modules"

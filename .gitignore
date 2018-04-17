@@ -15,3 +15,6 @@ _book
 *.mobi
 *.pdf
 *\~
+
+# For travis deployment
+deploy_key
