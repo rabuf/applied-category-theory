@@ -73,7 +73,7 @@ for all \\(a \in A\\) and \\(b \in B\\). In this situation we also say
 that \\(f\\) is a **left adjoint of \\(g\\)**.
 
 The names should be easy to remember, since \\(f\\) shows up on the
-_left_ of the inequality \\(f(a) \le_B b\\), while \\(g\\) shows up on
+_left_ of the inequality $$f(a) \le_B b $$, while \\(g\\) shows up on
 the _right_ of the inequality \\(a \le_A g(b)\\).  But let's see how
 they actually work!
 
@@ -93,8 +93,8 @@ equal to every element of this set:
 In other words, \\(g(b)\\) must be an **[upper
 bound](https://en.wikipedia.org/wiki/Upper_and_lower_bounds)** of this
 set. But you shouldn't choose \\(g(b)\\) to be any bigger than it
-needs to be! After all, you know \\(a \le_A g(b)\\) _only if_ \\(f(a)
-\le_B b\\). So, \\(g(b)\\) must be a **[least upper
+needs to be! After all, you know $$a \le_A g(b)$$ _only if_ $$f(a)
+\le_B b$$. So, \\(g(b)\\) must be a **[least upper
 bound](https://en.wikipedia.org/wiki/Infimum_and_supremum)** of the
 above set.
 
