@@ -81,7 +81,7 @@ be confusing. But here we go:
 
 3. The union of all the sets \\(S \in P\\) is \\(X\\): that is,
 
-<center>$$X = \bigcup_{S \in P} S$$</center>
+\\[X = \bigcup_{S \in P} S.\\]
 
 We call the sets \\(S \in P\\) the **parts** of the partition.
 
@@ -103,7 +103,7 @@ relation \\(\sim\\) on \\(X\\) that is:
 **Puzzle 28.** Show that if \\(P\\) is a partition of a set \\(X\\),
 and we define a relation \\(\sim_P\\) on \\(X\\) as follows:
 
-<center>$$x \sim_P y \textrm{ if and only if }  x, y \in S \textrm{ for some } S \in P,$$</center>
+\\[x \sim_P y \textrm{ if and only if } x, y \in S \textrm{ for some } S \in P,\\]
 
 then \\(\sim_P\\) is an equivalence relation.
 
@@ -111,7 +111,7 @@ then \\(\sim_P\\) is an equivalence relation.
 set \\(X\\), we can define a partition \\(P_\sim\\) on \\(X\\) whose
 parts are precisely the sets of the form
 
-<center>$$S_x = \{y \in X : \; y \sim x \}$$</center>
+\\[S_x = \\{y \in X : \; y \sim x \\}\\]
 
 with \\(x \in X\\). We call \\(S_x\\) the **equivalence class** of
 \\(x\\).
