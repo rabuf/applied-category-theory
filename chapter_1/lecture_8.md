@@ -2,7 +2,7 @@
 ---
 
 I'd like to tell you about two kinds of logic. In both, we start with
-a set \\(X\\) of "ways the world can be" and build a set of statements
+a set \\(X\\) of "states of the world" and build a set of statements
 about the world, also known as "propositions". In the first,
 propositions correspond to subsets of \\(X\\). In the second,
 propositions correspond to partitions of \\(X\\). In both approaches
@@ -23,9 +23,10 @@ Most of us learn the relation between propositions and subsets, at
 least implicitly, when we meet [Venn
 diagrams](https://en.wikipedia.org/wiki/Venn_diagram):
 
-<center><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Venn_diagram_gr_la_ru.svg/400px-Venn_diagram_gr_la_ru.svg.png"></center>
+<center><img src =
+"http://math.ucr.edu/home/baez/mathematical/7_sketches/venn_diagram.png"></center>
 
-This is a picture of some set \\(X\\) of "ways the world can be". But
+This is a picture of some set \\(X\\) of "states of the world". But
 the world here is very tiny: it's just a letter. It can be any letter
 in the Latin, Greek or Cyrillic alphabet. Each region in the Venn
 diagram is subset of \\(X\\): for example, the upper left circle
@@ -60,18 +61,20 @@ poset from the set \\(X\\).
 
 For any set \\(X\\) the **[power
 set](https://en.wikipedia.org/wiki/Power_set)** of \\(X\\) is the
-collection of all subsets of \\(X\\).  We call it \\(PX\\). It's a
+collection of all subsets of \\(X\\). We call it \\(P(X)\\). It's a
 poset, where the partial ordering is \\(\subseteq\\).
 
-For example, here is a picture of the poset \\(P X\\) when \\(X =
-\{x,y,z\}\\):
+For example, here is a picture of the poset \\(P(X)\\) when \\(X =
+\\{x,y,z\\}\\):
 
-<center><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasse_diagram_of_powerset_of_3.svg/500px-Hasse_diagram_of_powerset_of_3.svg.png"></center>
+<center><img src =
+"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasse_diagram_of_powerset_of_3.svg/500px-Hasse_diagram_of_powerset_of_3.svg.png"></center>
 
 As you can see, it looks like a 3-dimensional cube. Here's a picture
-of \\(P X\\) when \\(X\\) has 4 elements:
+of \\(P(X)\\) when \\(X\\) has 4 elements:
 
-<center><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hypercubeorder_binary.svg/500px-Hypercubeorder_binary.svg.png"></center>
+<center><img src =
+"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hypercubeorder_binary.svg/500px-Hypercubeorder_binary.svg.png"></center>
 
 In this picture we say whether each element is in or out of the subset
 by writing a 1 or 0. This time we get a 4-dimensional cube.
@@ -87,7 +90,7 @@ subsets. This is an example of a concept we can define in any poset:
 
 Quite generally we can try to think of _any_ poset as a poset of
 propositions. Then \\(\vee\\) means "or". In the logic we're studying
-today, this poset is \\(P X\\) and \\(\vee\\) is just "union", or
+today, this poset is \\(P(X)\\) and \\(\vee\\) is just "union", or
 \\(\cup\\).
 
 Similarly, what's the intersection of two subsets \\(S, T \subseteq
@@ -101,7 +104,7 @@ that \\(c \le a\\) and \\(c \le b\\). We denote the meet of \\(a\\)
 and \\(b\\) as \\(a \wedge b\\).
 
 When we think of a poset as a poset of propositions, \\(\wedge\\)
-means "and". When our poset is \\(P X\\), \\(\wedge\\) is just
+means "and". When our poset is \\(P(X)\\), \\(\wedge\\) is just
 "intersection". \\(\cap\\).
 
 We could go on with this, and if this were a course on classical logic
@@ -112,15 +115,15 @@ set \\(X\\), but all these posets are related to each other.
 
 I'll talk about this more next time, but let me give you a teaser now.
 Say we have two sets \\(X\\) and \\(Y\\) and a function \\(f : X \to
-Y\\). Then we get a monotone map from the poset \\(P Y\\) to the poset
-\\(P X\\), called
+Y\\). Then we get a monotone map from the poset \\(P(Y)\\) to the
+poset \\(P(X)\\), called
 
-<center>$$f^* : P Y \to P X$$</center>
+\\[f^* : P(Y) \to P(X)\\]
 
-For any \\(S \in P Y\\), the set \\(f^*(S) \in PX\\) is defined like
-this:
+For any \\(S \in P(Y)\\), the set \\(f^*(S) \in P(X)\\) is defined
+like this:
 
-<center>$$f^*(S) = \{ x \in X : \; f(x) \in S \}$$</center>
+\\[f^*(S) = \\{ x \in X : \; f(x) \in S \\}\\]
 
 Next time, I'll show you this monotone map has both a left and a right
 adjoint! And these turn out to be connected to the logical concepts of

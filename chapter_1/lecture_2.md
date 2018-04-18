@@ -6,7 +6,7 @@ away that it's just getting started. While I can point you to some
 great applications of category theory outside mathematics and computer
 science, if you ask "have categories been successfully applied to X?"
 there's a high chance the answer will be no, even if such an
-application is possible!  It takes time.
+application is possible! It takes time.
 
 Category theory was created in 1947. _It was created to be
 applied_. Mathematicians were having problems connecting topology to
@@ -39,8 +39,8 @@ I'm _not_ a programmer. I apologize for this flaw. I know a fair
 amount about categories in computer science - but I learned it from
 the category theory side, not from hands-on experience in programming.
 For example, I understood monads before I heard of Haskell, and my
-first reaction was "What are these guys doing with monads?  How are
-they managing to make such a simple concept so mysterious?"  I
+first reaction was "What are these guys doing with monads? How are
+they managing to make such a simple concept so mysterious?" I
 understood cartesian closed categories before I understood the lambda
 calculus, and I can't imagine myself understanding the lambda calculus
 _without_ category theory (though plenty of people do).
@@ -70,7 +70,7 @@ I'm being paid by the Silicon Valley startup
 [Pyrofex](https://johncarlosbaez.wordpress.com/2018/02/04/pyrofex/) to
 do research in category theory, and I've got 8 grad students and a
 postdoc studying [networks](http://math.ucr.edu/home/baez/networks/)
-using category theory.  And it's not just us - it's catching on.
+using category theory. And it's not just us - it's catching on.
 
 It's this incipient spread of category theory into many areas of
 science and engineering that people mean when they say "applied
@@ -121,6 +121,8 @@ its own name.
 The book by Fong and Spivak is a great introduction to category theory
 as viewed from this new perspective. So that's what we'll talk about
 here!
+
+**[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
 
 ---
 

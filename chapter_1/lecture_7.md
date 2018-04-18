@@ -6,7 +6,7 @@ are the real numbers \\(\mathbb{R}\\) and the natural numbers
 \\(\mathbb{N}\\) with their usual order \\(\le\\). Of course every
 natural number is a real number, so there's a function
 
-<center>$$i : \mathbb{N} \to \mathbb{R}$$</center>
+\\[i : \mathbb{N} \to \mathbb{R}\\]
 
 sending any natural number \\(x \in \mathbb{N}\\) to the exact same
 number regarded as a real number. This function is monotone, so you
@@ -21,7 +21,7 @@ diversity of posets. Both \\(\mathbb{N}\\) and \\(\mathbb{Z}\\) have a
 very special property. They are **[totally ordered
 sets](https://en.wikipedia.org/wiki/Total_order)**: posets such that
 
-<center>$$\textrm{ for all } x, y,  \textrm{ either } x \le y \textrm{ or } y \le x .$$</center>
+\\[\textrm{ for all } x, y,  \textrm{ either } x \le y \textrm{ or } y \le x .\\]
 
 If you want to show off, you can call totally ordered sets **tosets**.
 They're also called **linearly ordered**, because you can imagine them
@@ -75,6 +75,8 @@ an enormous wonderful field, but we'll just do a bit of logic based on
 the poset of subsets of a set, followed by a bit of logic based on the
 poset of partitions of a set. The latter underlies Fong and Spivak's
 discussion of "generative effects" in Chapter 1.
+
+**[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
 
 ---
 

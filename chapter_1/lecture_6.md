@@ -9,32 +9,32 @@ review these puzzles and extract some valuable lessons!
 We took the function \\(f : \mathbb{N} \to \mathbb{N}\\) that doubles
 any natural number
 
-<center>$$f(a) = 2a .$$</center>
+\\[f(a) = 2a .\\]
 
 This function has no inverse, since you can't divide an odd number by
 2 and get a natural number! But if you did the puzzles, you saw that
 \\(f\\) has a "right adjoint" \\(g : \mathbb{N} \to \mathbb{N}\\).
 This is defined by the property
 
-<center>$$f(a) \le b \textrm{ if and only if } a \le g(b) .$$</center>
+\\[f(a) \le b \textrm{ if and only if } a \le g(b) .\\]
 
 or in other words,
 
-<center>$$2a \le b \textrm{ if and only if } a \le g(b) .$$</center>
+\\[2a \le b \textrm{ if and only if } a \le g(b) .\\]
 
 Using our knowledge of fractions, we have
 
-<center>$$2a \le b \textrm{ if and only if }  a \le b/2$$</center>
+\\[2a \le b \textrm{ if and only if }  a \le b/2\\]
 
 but since \\(a\\) is a natural number, this implies
 
-<center>$$2a \le b \textrm{ if and only if }  a \le \lfloor b/2 \rfloor$$</center>
+\\[2a \le b \textrm{ if and only if }  a \le \lfloor b/2 \rfloor\\]
 
 where we are using the [floor
 function](https://en.wikipedia.org/wiki/Floor_and_ceiling_functions)
 to pick out the largest integer \\(\le b/2\\). So,
 
-<center>$$g(b) = \lfloor b/2 \rfloor.$$</center>
+\\[g(b) = \lfloor b/2 \rfloor.\\]
 
 Moral: the right adjoint \\(g\\) is the "best approximation from
 below" to the nonexistent inverse of \\(f\\).
@@ -67,13 +67,13 @@ Here's the definition again. Suppose we have two preorders
 \to B\\).  Then we say a monotone function \\(g: B \to A\\) is a
 **right adjoint of \\(f\\)** if
 
-<center>$$f(a) \le_B b  \textrm{ if and only if } a \le_A g(b)$$</center>
+\\[f(a) \le_B b  \textrm{ if and only if } a \le_A g(b)\\]
 
 for all \\(a \in A\\) and \\(b \in B\\). In this situation we also say
 that \\(f\\) is a **left adjoint of \\(g\\)**.
 
 The names should be easy to remember, since \\(f\\) shows up on the
-_left_ of the inequality $$f(a) \le_B b $$, while \\(g\\) shows up on
+_left_ of the inequality $$f(a) \le_B b$$, while \\(g\\) shows up on
 the _right_ of the inequality \\(a \le_A g(b)\\).  But let's see how
 they actually work!
 
@@ -81,14 +81,14 @@ Suppose you know \\(f : A \to B\\) and you're trying to figure out its
 right adjoint \\(g: B \to A\\). Say you're trying to figure out
 \\(g(b)\\). You don't know what it is, but you know
 
-<center>$$f(a) \le_B b  \textrm{ if and only if } a \le_A g(b)$$</center>
+\\[f(a) \le_B b  \textrm{ if and only if } a \le_A g(b)\\]
 
 So, you go around looking at choices of \\(a \in A\\). For each one
 you compute \\(f(a)\\).  If \\(f(a) \le_B b\\), then you know \\(a
 \le_A g(b)\\). So, you need to choose \\(g(b)\\) to be greater than or
 equal to every element of this set:
 
-<center>$$\{a  \in A : \; f(a) \le_B b  \}$$</center>
+\\[\{a  \in A : \; f(a) \le_B b  \}\\]
 
 In other words, \\(g(b)\\) must be an **[upper
 bound](https://en.wikipedia.org/wiki/Upper_and_lower_bounds)** of this
@@ -105,14 +105,14 @@ Since they're both the least, we must have \\(a \le a'\\) and \\(a'
 our preorder \\(A\\) is a "poset". A **poset** is a preorder \\((A,
 \le_A)\\) obeying this extra axiom:
 
-<center>$$\textrm{ if } a \le a'  \textrm{ and } a' \le a \textrm{ then } a = a'$$</center>
+\\[\textrm{ if } a \le a'  \textrm{ and } a' \le a \textrm{ then } a = a'\\]
 
 for all \\(a,a' \in A\\).
 
 In a poset, our desired least upper bound may still not _exist_. But
 if it does, it's _unique_, and Fong and Spivak write it this way:
 
-<center>$$\bigvee \{a  \in A : \; f(a) \le_B b  \}$$</center>
+\\[\bigvee \{a  \in A : \; f(a) \le_B b  \}\\]
 
 The \\(\bigvee\\) symbol stands for "least upper bound", also known as
 **supremum** or **join**.
@@ -122,20 +122,22 @@ So, here's what we've shown:
 If \\(f : A \to B\\) has a right adjoint \\(g : B \to A\\) and \\(A\\)
 is a poset, this right adjoint is unique and we have a formula for it:
 
-<center>$$g(b) =  \bigvee \{a  \in A : \; f(a) \le_B b  \} .$$</center>
+\\[g(b) =  \bigvee \{a  \in A : \; f(a) \le_B b  \} .\\]
 
 And we can copy our whole line of reasoning and show this:
 
 If \\(g : B \to A\\) has a left adjoint \\(f : A \to B\\) and \\(B\\)
 is a poset, this left adjoint is unique and we have a formula for it:
 
-<center>$$f(a) =  \bigwedge \{b  \in B : \; a \le_A g(b)\}.$$</center>
+\\[f(a) =  \bigwedge \{b  \in B : \; a \le_A g(b)\}.\\]
 
 Here the \\(\bigwedge\\) symbol stands for "greatest lower bound",
 also known as the **infimum** or **meet**.
 
 We're making progress: we can now actually compute left and right
 adjoints! Next we'll start looking at more examples.
+
+**[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
 
 ---
 

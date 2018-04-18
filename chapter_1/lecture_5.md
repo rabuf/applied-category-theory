@@ -1,5 +1,7 @@
 # Lecture 5 - Galois Connections Part 2
+
 ---
+
 Okay: I've told you what a Galois connection is. But now it's time to
 explain why they matter. This will take much longer - and be much more
 fun.
@@ -11,9 +13,9 @@ More precisely, they tell you _the best approximation to reversing a
 computation that can't be reversed._
 
 Someone hands you the output of some computation, and asks you what
-the input was.  Sometimes there's a unique right answer.  But
-sometimes there's more than one answer, or none!  That's when your job
-gets hard.  In fact, impossible!  But don't let that stop you.
+the input was. Sometimes there's a unique right answer. But sometimes
+there's more than one answer, or none! That's when your job gets
+hard. In fact, impossible! But don't let that stop you.
 
 <center><img width = "300" src =
 "https://johncarlosbaez.files.wordpress.com/2016/04/the-difficult-we-do-immediately-the-impossible-takes-a-little-longer.jpg"></center>
@@ -21,11 +23,11 @@ gets hard.  In fact, impossible!  But don't let that stop you.
 Suppose we have a function between sets, \\(f : A \to B\\). We say a
 function \\(g: B \to A\\) is the **inverse** of \\(f\\) if
 
-<center>$$g(f(a)) = a \textrm{ for all } a \in A  \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B$$</center>
+\\[g(f(a)) = a \textrm{ for all } a \in A \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B\\]
 
 Another equivalent way to say this is that
 
-<center>$$f(a) = b  \textrm{ if and only if } a =  g(b)$$</center>
+\\[f(a) = b \textrm{ if and only if } a = g(b)\\]
 
 for all \\(a \in A\\) and \\(b \in B\\).
 
@@ -56,7 +58,7 @@ But we're not talking about distance functions in this class now!
 We're talking about _preorders_. Can we define a "best approximation"
 using just the relation \\(\le\\) on \\(\mathbb{N}\\)?
 
-Yes!  But we can do it in two ways!
+Yes! But we can do it in two ways!
 
 **Best approximation from below.** Find the largest possible \\(a \in
 \mathbb{N}\\) such that \\(2a \le 3\\). Answer: \\(a = 1\\).
@@ -81,19 +83,21 @@ copy them here with notation that better matches what I'm using now:
 \to \mathbb{N}\\) that doubles natural numbers: that is, a function
 \\(g : \mathbb{N} \to \mathbb{N}\\) with
 
-<center>$$f(a) \le b  \textrm{ if and only if } a \le  g(b)$$</center>
+\\[f(a) \le b \textrm{ if and only if } a \le g(b)\\]
 
 for all \\(a,b \in \mathbb{N}\\).
 
 **Puzzle 13.** Find a left adjoint for the same function \\(f\\): that
 is, a function \\(g : \mathbb{N} \to \mathbb{N}\\) with
 
-<center>$$g(b) \le a  \textrm{ if and only if } b \le  f(a)$$</center>
+\\[g(b) \le a \textrm{ if and only if } b \le f(a)\\]
 
 Next:
 
 **Puzzle 16.** What's going on here? What's the pattern you see, and
 why is it working this way?
+
+**[To read other lectures go here.](http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course)**
 
 ---
 
