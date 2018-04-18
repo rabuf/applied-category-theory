@@ -5,7 +5,7 @@
 I've been explaining how we can create a version of logic starting
 from any poset, which we think of as a poset of "propositions". There
 are various ways to get our hands on such a poset. One way is to start
-with a set \\(X\\) and build a poset \\(P X\\) whose elements are
+with a set \\(X\\) and build a poset \\(P(X)\\) whose elements are
 subsets of \\(X\\). This leads to the most traditional form of logic,
 called classical logic. But another way is to start with a set \\(X\\)
 and build a poset \\(\mathcal{E}(X)\\) whose elements are "partitions"

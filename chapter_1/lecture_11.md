@@ -28,7 +28,7 @@ let \\(\sim_P\\) be the corresponding equivalence relation.
 **Definition.** We say that a partition \\(P\\) of \\(X\\) is
 **finer** than a partition \\(Q\\) of \\(X\\) if
 
-<center>$$x \sim_P y \textrm{ implies } x \sim_Q y$$</center>
+\\[x \sim_P y \textrm{ implies } x \sim_Q y\\]
 
 for all \\(x,y \in X\\). In this situation we write \\(P \le Q\\), and
 we also say \\(Q\\) is **coarser** than \\(P\\).
@@ -41,47 +41,47 @@ partitions!
 **Proof.** We just need to show that the relation \\(\le\\) is
 reflexive, transitive and antisymmetric. Since
 
-<center>$$x \sim_P y \textrm{ implies } x \sim_P y$$</center>
+\\[x \sim_P y \textrm{ implies } x \sim_P y\\]
 
 for all \\(x,y \in X\\), we have
 
-<center>$$P \le P$$</center>
+\\[P \le P\\]
 
 so the relation \\(\le\\) is reflexive.
 
 If
 
-<center>$$x \sim_P y \textrm{ implies } x \sim_Q y$$</center>
+\\[x \sim_P y \textrm{ implies } x \sim_Q y\\]
 
 and
 
-<center>$$x \sim_Q y \textrm{ implies } x \sim_R y$$</center>
+\\[x \sim_Q y \textrm{ implies } x \sim_R y\\]
 
 then clearly
 
-<center>$$x \sim_P y \textrm{ implies } x \sim_R y$$</center>
+\\[x \sim_P y \textrm{ implies } x \sim_R y\\]
 
 So,
 
-<center>$$P \le Q \textrm{ and } Q \le R \textrm{ implies } P \le R$$</center>
+\\[P \le Q \textrm{ and } Q \le R \textrm{ implies } P \le R\\]
 
 so the relation \\(\le\\) is transitive.
 
 Finally, to show that \\(\le\\) is antisymmetric, assume
 
-<center>$$P \le Q \textrm{ and } Q \le P.$$</center>
+\\[P \le Q \textrm{ and } Q \le P.\\]
 
 Then by definition
 
-<center>$$x \sim_P y \textrm{ implies } x \sim_Q y$$</center>
+\\[x \sim_P y \textrm{ implies } x \sim_Q y\\]
 
 and
 
-<center>$$x \sim_Q y \textrm{ implies } x \sim_P y$$</center>
+\\[x \sim_Q y \textrm{ implies } x \sim_P y\\]
 
 or in other words,
 
-<center>$$x \sim_P y \textrm{ if and only if } x \sim_Q y.$$</center>
+\\[x \sim_P y \textrm{ if and only if } x \sim_Q y.\\]
 
 This means that the relations \\(\sim_P\\) and \\(\sim_Q\\) are equal,
 so \\(P = Q\\) as desired. \\(\quad \blacksquare\\)
@@ -121,13 +121,13 @@ Not so easy: it's the \\(n\\)th **[Bell
 number](https://en.wikipedia.org/wiki/Bell_number)** \\(B_n\\). The
 Bell numbers go like this:
 
-<center>$$1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570, \dots$$</center>
+\\[1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570, \dots\\]
 
 Another example: poset of subsets looks the same when you flip it
 upside down. That's because any subset \\(S \subseteq X\\) has a
 **complement**
 
-<center>$$X - S = \{x \in X : \; x \notin S \}.$$</center>
+\\[X - S = \{x \in X : \; x \notin S \}.\\]
 
 In the logic of subsets this gives **negation**: if a subset \\(S
 \subseteq X\\) corresponds to some proposition \\(P\\), its complement
