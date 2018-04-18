@@ -346,18 +346,16 @@ possible way to recover data that can&apos;t be recovered</em>.</p>
 <p>More precisely, they tell you <em>the best approximation to reversing a
 computation that can&apos;t be reversed.</em></p>
 <p>Someone hands you the output of some computation, and asks you what
-the input was.  Sometimes there&apos;s a unique right answer.  But
-sometimes there&apos;s more than one answer, or none!  That&apos;s when your job
-gets hard.  In fact, impossible!  But don&apos;t let that stop you.</p>
+the input was. Sometimes there&apos;s a unique right answer. But sometimes
+there&apos;s more than one answer, or none! That&apos;s when your job gets
+hard. In fact, impossible! But don&apos;t let that stop you.</p>
 <center><img width="300" src="https://johncarlosbaez.files.wordpress.com/2016/04/the-difficult-we-do-immediately-the-impossible-takes-a-little-longer.jpg"></center>
 
 <p>Suppose we have a function between sets, \(f : A \to B\). We say a
 function \(g: B \to A\) is the <strong>inverse</strong> of \(f\) if</p>
-<center><script type="math/tex; ">g(f(a)) = a \textrm{ for all } a \in A  \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B</script></center>
-
+<p>\[g(f(a)) = a \textrm{ for all } a \in A \quad \textrm{ and } \quad f(g(b)) = b \textrm{ for all } b \in B\]</p>
 <p>Another equivalent way to say this is that</p>
-<center><script type="math/tex; ">f(a) = b  \textrm{ if and only if } a =  g(b)</script></center>
-
+<p>\[f(a) = b \textrm{ if and only if } a = g(b)\]</p>
 <p>for all \(a \in A\) and \(b \in B\).</p>
 <p>So, the idea is that \(g\) undoes \(f\). For example, if \(A = B
 = \mathbb{R}\) is the set of real numbers, and \(f\) doubles every
@@ -380,7 +378,7 @@ distance function, or
 <p>But we&apos;re not talking about distance functions in this class now!
 We&apos;re talking about <em>preorders</em>. Can we define a &quot;best approximation&quot;
 using just the relation \(\le\) on \(\mathbb{N}\)?</p>
-<p>Yes!  But we can do it in two ways!</p>
+<p>Yes! But we can do it in two ways!</p>
 <p><strong>Best approximation from below.</strong> Find the largest possible \(a \in
 \mathbb{N}\) such that \(2a \le 3\). Answer: \(a = 1\).</p>
 <p><strong>Best approximation from above.</strong> Find the smallest possible \(a \in
@@ -397,16 +395,15 @@ copy them here with notation that better matches what I&apos;m using now:</p>
 <p><strong>Puzzle 12.</strong> Find a right adjoint for the function \(f: \mathbb{N}
 \to \mathbb{N}\) that doubles natural numbers: that is, a function
 \(g : \mathbb{N} \to \mathbb{N}\) with</p>
-<center><script type="math/tex; ">f(a) \le b  \textrm{ if and only if } a \le  g(b)</script></center>
-
+<p>\[f(a) \le b \textrm{ if and only if } a \le g(b)\]</p>
 <p>for all \(a,b \in \mathbb{N}\).</p>
 <p><strong>Puzzle 13.</strong> Find a left adjoint for the same function \(f\): that
 is, a function \(g : \mathbb{N} \to \mathbb{N}\) with</p>
-<center><script type="math/tex; ">g(b) \le a  \textrm{ if and only if } b \le  f(a)</script></center>
-
+<p>\[g(b) \le a \textrm{ if and only if } b \le f(a)\]</p>
 <p>Next:</p>
 <p><strong>Puzzle 16.</strong> What&apos;s going on here? What&apos;s the pattern you see, and
 why is it working this way?</p>
+<p><strong><a href="http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course" target="_blank">To read other lectures go here.</a></strong></p>
 <hr>
 <p><a href="https://forum.azimuthproject.org/discussion/1845/lecture-5-chapter-1-galois-connections/p1" target="_blank">Click here to read the original
 discussion</a></p>
@@ -456,7 +453,7 @@ discussion</a></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 5 - Galois Connections Part 2","level":"2.5","depth":1,"next":{"title":"Lecture 6 - Computing Adjoints","level":"2.6","depth":1,"path":"chapter_1/lecture_6.md","ref":"chapter_1/lecture_6.md","articles":[]},"previous":{"title":"Lecture 4 - Galois Connections Part 1","level":"2.4","depth":1,"path":"chapter_1/lecture_4.md","ref":"chapter_1/lecture_4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_5.md","mtime":"2018-04-17T05:49:52.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-17T05:51:12.583Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 5 - Galois Connections Part 2","level":"2.5","depth":1,"next":{"title":"Lecture 6 - Computing Adjoints","level":"2.6","depth":1,"path":"chapter_1/lecture_6.md","ref":"chapter_1/lecture_6.md","articles":[]},"previous":{"title":"Lecture 4 - Galois Connections Part 1","level":"2.4","depth":1,"path":"chapter_1/lecture_4.md","ref":"chapter_1/lecture_4.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_5.md","mtime":"2018-04-18T03:01:17.442Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-18T03:02:25.504Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

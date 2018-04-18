@@ -339,7 +339,7 @@
                                 <h1 id="lecture-8---the-logic-of-subsets">Lecture 8 - The Logic of Subsets</h1>
 <hr>
 <p>I&apos;d like to tell you about two kinds of logic. In both, we start with
-a set \(X\) of &quot;ways the world can be&quot; and build a set of statements
+a set \(X\) of &quot;states of the world&quot; and build a set of statements
 about the world, also known as &quot;propositions&quot;. In the first,
 propositions correspond to subsets of \(X\). In the second,
 propositions correspond to partitions of \(X\). In both approaches
@@ -356,9 +356,9 @@ Spivak spend more time on the second kind.</p>
 <p>Most of us learn the relation between propositions and subsets, at
 least implicitly, when we meet <a href="https://en.wikipedia.org/wiki/Venn_diagram" target="_blank">Venn
 diagrams</a>:</p>
-<center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Venn_diagram_gr_la_ru.svg/400px-Venn_diagram_gr_la_ru.svg.png"></center>
+<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/venn_diagram.png"></center>
 
-<p>This is a picture of some set \(X\) of &quot;ways the world can be&quot;. But
+<p>This is a picture of some set \(X\) of &quot;states of the world&quot;. But
 the world here is very tiny: it&apos;s just a letter. It can be any letter
 in the Latin, Greek or Cyrillic alphabet. Each region in the Venn
 diagram is subset of \(X\): for example, the upper left circle
@@ -390,14 +390,14 @@ about logic.</p>
 poset from the set \(X\).</p>
 <p>For any set \(X\) the <strong><a href="https://en.wikipedia.org/wiki/Power_set" target="_blank">power
 set</a></strong> of \(X\) is the
-collection of all subsets of \(X\).  We call it \(PX\). It&apos;s a
+collection of all subsets of \(X\). We call it \(P(X)\). It&apos;s a
 poset, where the partial ordering is \(\subseteq\).</p>
-<p>For example, here is a picture of the poset \(P X\) when \(X =
-{x,y,z}\):</p>
+<p>For example, here is a picture of the poset \(P(X)\) when \(X =
+\{x,y,z\}\):</p>
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Hasse_diagram_of_powerset_of_3.svg/500px-Hasse_diagram_of_powerset_of_3.svg.png"></center>
 
 <p>As you can see, it looks like a 3-dimensional cube. Here&apos;s a picture
-of \(P X\) when \(X\) has 4 elements:</p>
+of \(P(X)\) when \(X\) has 4 elements:</p>
 <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hypercubeorder_binary.svg/500px-Hypercubeorder_binary.svg.png"></center>
 
 <p>In this picture we say whether each element is in or out of the subset
@@ -411,7 +411,7 @@ subsets. This is an example of a concept we can define in any poset:</p>
 \(b\) as \(a \vee b\).</p>
 <p>Quite generally we can try to think of <em>any</em> poset as a poset of
 propositions. Then \(\vee\) means &quot;or&quot;. In the logic we&apos;re studying
-today, this poset is \(P X\) and \(\vee\) is just &quot;union&quot;, or
+today, this poset is \(P(X)\) and \(\vee\) is just &quot;union&quot;, or
 \(\cup\).</p>
 <p>Similarly, what&apos;s the intersection of two subsets \(S, T \subseteq
 X\)? Well, it&apos;s the largest subset of \(X\) that is contained as a
@@ -422,7 +422,7 @@ concept we can define in any poset:</p>
 that \(c \le a\) and \(c \le b\). We denote the meet of \(a\)
 and \(b\) as \(a \wedge b\).</p>
 <p>When we think of a poset as a poset of propositions, \(\wedge\)
-means &quot;and&quot;. When our poset is \(P X\), \(\wedge\) is just
+means &quot;and&quot;. When our poset is \(P(X)\), \(\wedge\) is just
 &quot;intersection&quot;. \(\cap\).</p>
 <p>We could go on with this, and if this were a course on classical logic
 I would. But this is a course on applied category theory! So, we
@@ -431,14 +431,12 @@ happens when we let it vary! We get a poset of propositions for each
 set \(X\), but all these posets are related to each other.</p>
 <p>I&apos;ll talk about this more next time, but let me give you a teaser now.
 Say we have two sets \(X\) and \(Y\) and a function \(f : X \to
-Y\). Then we get a monotone map from the poset \(P Y\) to the poset
-\(P X\), called</p>
-<center><script type="math/tex; ">f^* : P Y \to P X</script></center>
-
-<p>For any \(S \in P Y\), the set \(f^*(S) \in PX\) is defined like
-this:</p>
-<center><script type="math/tex; ">f^*(S) = \{ x \in X : \; f(x) \in S \}</script></center>
-
+Y\). Then we get a monotone map from the poset \(P(Y)\) to the
+poset \(P(X)\), called</p>
+<p>\[f^* : P(Y) \to P(X)\]</p>
+<p>For any \(S \in P(Y)\), the set \(f^*(S) \in P(X)\) is defined
+like this:</p>
+<p>\[f^*(S) = \{ x \in X : \; f(x) \in S \}\]</p>
 <p>Next time, I&apos;ll show you this monotone map has both a left and a right
 adjoint! And these turn out to be connected to the logical concepts of
 &quot;there exists&quot; and &quot;for all&quot;. I believe this was first discovered by
@@ -497,7 +495,7 @@ first in good old classical &quot;subset logic&quot;, and then in the weird new
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 8 - The Logic of Subsets","level":"2.8","depth":1,"next":{"title":"Lecture 9 - Adjoints and the Logic of Subsets","level":"2.9","depth":1,"path":"chapter_1/lecture_9.md","ref":"chapter_1/lecture_9.md","articles":[]},"previous":{"title":"Lecture 7 - Logic","level":"2.7","depth":1,"path":"chapter_1/lecture_7.md","ref":"chapter_1/lecture_7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_8.md","mtime":"2018-04-17T05:49:52.728Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-17T05:51:12.583Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 8 - The Logic of Subsets","level":"2.8","depth":1,"next":{"title":"Lecture 9 - Adjoints and the Logic of Subsets","level":"2.9","depth":1,"path":"chapter_1/lecture_9.md","ref":"chapter_1/lecture_9.md","articles":[]},"previous":{"title":"Lecture 7 - Logic","level":"2.7","depth":1,"path":"chapter_1/lecture_7.md","ref":"chapter_1/lecture_7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_8.md","mtime":"2018-04-18T03:01:17.446Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-18T03:02:25.504Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
