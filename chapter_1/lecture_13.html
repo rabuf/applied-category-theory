@@ -338,6 +338,129 @@
                                 
                                 <h1 id="lecture-13---pulling-back-partitions">Lecture 13 - Pulling Back Partitions</h1>
 <hr>
+<p>Last time we studied meets and joins of partitions. We observed an
+interesting difference between the two.</p>
+<p>Suppose we have partitions \(P\) and \(Q\) of a set \(X\). To
+figure out if two elements \(x , x&apos; \in X\) are in the same part of
+the meet \(P \wedge Q\), it&apos;s enough to know if they&apos;re the same
+part of \(P\) and the same part of \(Q\), since</p>
+<p>\[ x \sim_{P \wedge Q} x&apos; \textrm{ if and only if } x \sim_P x&apos;
+\textrm{ and } x \sim_Q x&apos;. \]</p>
+<p>Here \(x \sim_P x&apos;\) means that \(x\) and \(x&apos;\) are in the same
+part of \(P\), and so on.</p>
+<p>However, this does <em>not</em> work for the join!</p>
+<p>\[ \textbf{THIS IS FALSE: } \; x \sim_{P \vee Q} x&apos; \textrm{ if and
+only if } x \sim_P x&apos; \textrm{ or } x \sim_Q x&apos; . \]</p>
+<p>To understand this better, the key is to think about the &quot;inclusion&quot;</p>
+<p>\[ i : \{x,x&apos;\} \to X , \]</p>
+<p>that is, the function sending \(x\) and \(x&apos;\) to themselves
+thought of as elements of \(X\). We&apos;ll soon see that any partition
+\(P\) of \(X\) can be &quot;pulled back&quot; to a partition
+\(i^{\ast}(P)\) on the little set \( \{x,x&apos;\} \). And we&apos;ll see
+that our observation can be restated as follows:</p>
+<p>\[ i^{\ast}(P \wedge Q) = i^{\ast}(P) \wedge i^{\ast}(Q) \]</p>
+<p>but</p>
+<p>\[ \textbf{THIS IS FALSE: } \; i^{\ast}(P \vee Q) = i^{\ast}(P) \vee
+i^{\ast}(Q) . \]</p>
+<p>This is just a slicker way of saying the exact same thing. But it will
+turn out to be more illuminating!</p>
+<p>So how do we &quot;pull back&quot; a partition?</p>
+<p>Suppose we have any function \(f : X \to Y\). Given any partition
+\(P\) of \(Y\), we can &quot;pull it back&quot; along \(f\) and get a
+partition of \(X\) which we call \(f^{\ast}(P)\). Here&apos;s an
+example from the book:</p>
+<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_pullback.png"></center>
+
+<p>Any part \(S\) of \(P\) gives a part of \(f^{\ast}(P)\): the set
+of all elements of \(X\) that map to \(S\). This set is just the
+<strong>preimage</strong> of \(S\) under \(f\), which we met in <a href="lecture_9.html">Lecture
+9</a>. We called it</p>
+<p>\[ f^{\ast}(S) = \{x \in X: \; f(x) \in S \}. \]</p>
+<p>So beware: we are now using the symbol \(f^{\ast}\) in two ways: for
+the preimage of a subset and for the pullback of a partition. But
+these two ways fit together very nicely, so it&apos;ll be okay.</p>
+<p>Summarizing:</p>
+<p><strong>Definition.</strong> Given a function \(f : X \to Y\) and a partition
+\(P\) of \(Y\), define the <strong>pullback</strong> of \(P\) along \(f\)
+to be this partition of \(X\):</p>
+<p>\[ f^{\ast}(P) = \{ f^{\ast}(S) : \; S \in P \} . \]</p>
+<p><strong>Puzzle 40.</strong> Show that \( f^{\ast}(P) \) really is a partition
+using the fact that \(P\) is. It&apos;s fun to prove this using
+properties of the preimage map \( f^{\ast} : P(Y) \to P(X) \).</p>
+<p>It&apos;s easy to tell if two elements of \(X\) are in the same part of
+\(f^{\ast}(P)\): just map them to \(Y\) and see if they land in
+the same part of \(P\). In other words,</p>
+<p>\[ x\sim_{f^{\ast}(P)} x&apos; \textrm{ if and only if } f(x) \sim_P f(x&apos;)
+\]</p>
+<p>Now for the main point:</p>
+<p><strong>Proposition.</strong> Given a function \(f : X \to Y\) and partitions
+\(P\) and \(Q\) of \(Y\), we always have</p>
+<p>\[ f^{\ast}(P \wedge Q) = f^{\ast}(P) \wedge f^{\ast}(Q) \]</p>
+<p>but sometimes we have</p>
+<p>\[ f^{\ast}(P \vee Q) \ne f^{\ast}(P) \vee f^{\ast}(Q) . \]</p>
+<p><strong>Proof.</strong> To prove that</p>
+<p>\[ f^{\ast}(P \wedge Q) = f^{\ast}(P) \wedge f^{\ast}(Q) \]</p>
+<p>it&apos;s enough to prove that they give the same equivalence relation on
+\(X\). That is, it&apos;s enough to show</p>
+<center><script type="math/tex; "> x \sim_{f^{\ast}(P \wedge Q)} x' \textrm{ if and only if }
+x \sim_{ f^{\ast}(P) \wedge f^{\ast}(Q) } x'. </script></center>
+
+<p>This looks scary but we just follow our nose. First we rewrite the
+right-hand side using our observation about the meet of partitions:</p>
+<center><script type="math/tex; "> x \sim_{f^{\ast}(P \wedge Q)} x' \textrm{ if and only if }
+x \sim_{ f^{\ast}(P)} x' \textrm{ and } x\sim_{f^{\ast}(Q) } x'.
+</script></center>
+
+<p>Then we rewrite everything using what we just saw about the pullback:</p>
+<p>\[ f(x) \sim_{P \wedge Q} f(x&apos;) \textrm{ if and only if } f(x) \sim_P
+f(x&apos;) \textrm{ and } f(x) \sim_Q f(x&apos;). \]</p>
+<p>And this is true, by our observation about the meet of partitions!
+So, we&apos;re really just stating that observation in a new language.</p>
+<p>To prove that sometimes</p>
+<p>\[ f^{\ast}(P \vee Q) \ne f^{\ast}(P) \vee f^{\ast}(Q) , \]</p>
+<p>we just need one example. So, take \(P\) and \(Q\) to be these two
+partitions:</p>
+<center><img src="http://math.ucr.edu/home/baez/mathematical/7_sketches/partitions_named.png"></center>
+
+<p>They are partitions of the set</p>
+<p>\[ Y = \{11, 12, 13, 21, 22, 23 \}. \]</p>
+<p>Take \(X = \{11,22\} \) and let \(i : X \to Y \) be the
+inclusion of \(X\) into \(Y\), meaning that</p>
+<p>\[ i(11) = 11, \quad i(22) = 22 . \]</p>
+<p>Then compute everything! \(11\) and \(22\) are in different parts
+of \(i^{\ast}(P)\):</p>
+<p>\[ i^{\ast}(P) = \{ \{11\}, \{22\} \} . \]</p>
+<p>They&apos;re also in different parts of \(i^{\ast}(Q)\):</p>
+<p>\[ i^{\ast}(Q) = \{ \{11\}, \{22\} \} .\]</p>
+<p>Thus, we have</p>
+<p>\[ i^{\ast}(P) \vee i^{\ast}(Q) = \{ \{11\}, \{22\} \} . \]</p>
+<p>On the other hand, the join \(P \vee Q \) has just two parts:</p>
+<p>\[ P \vee Q = \{\{11,12,13,22,23\},\{21\}\} . \]</p>
+<p>If you don&apos;t see why, figure out the finest partition that&apos;s coarser
+than \(P\) and \(Q\) - that&apos;s \(P \vee Q \). Since \(11\) and
+\(22\) are in the same parts here, the pullback \(f^{\ast}(P) \vee
+f^{\ast}(Q) \) has just one part:</p>
+<p>\[ f^{\ast}(P \vee Q) = \{ \{11, 22 \} \} . \]</p>
+<p>So, we have</p>
+<p>\[ f^{\ast}(P \vee Q) \ne f^{\ast}(P) \vee f^{\ast}(Q) \]</p>
+<p>as desired. \( \quad \blacksquare \)</p>
+<p>Now for the real punchline. The example we just saw was the same as
+our example of a &quot;generative effect&quot; in <a href="lecture_12.html">Lecture 12</a>.
+So, we have a new way of thinking about generative effects: <em>the
+pullback of partitions preserves meets, but it may not preserve
+joins!</em></p>
+<p>This is an interesting feature of the logic of partitions. Next time
+we&apos;ll understand it more deeply by pondering left and right adjoints.
+But to warm up, you should compare how meets and joins work in the
+logic of subsets:</p>
+<p><strong>Puzzle 41.</strong> Let \(f : X \to Y \) and let \(f^{\ast} : PY \to PX
+\) be the function sending any subset of \(Y\) to its preimage in
+\(X\). Given \(S,T \in P(Y) \), is it always true that</p>
+<p>\[ f^{\ast}(S \wedge T) = f^{\ast}(S) \wedge f^{\ast}(T)? \]</p>
+<p>Is it always true that</p>
+<p>\[ f^{\ast}(S \vee T) = f^{\ast}(S) \vee f^{\ast}(T)? \]</p>
+<p><strong><a href="http://www.azimuthproject.org/azimuth/show/Applied+Category+Theory#Course" target="_blank">To read other lectures go here.</a></strong></p>
+<hr>
 <p><a href="https://forum.azimuthproject.org/discussion/2008/lecture-13-chapter-1-pulling-back-partitions/p1" target="_blank">Click here to read the original discussion.</a></p>
 <hr>
 <h2 id="license">License</h2>
@@ -385,7 +508,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"next":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"path":"chapter_1/lecture_14.md","ref":"chapter_1/lecture_14.md","articles":[]},"previous":{"title":"Lecture 12 - Generative Effects","level":"2.12","depth":1,"path":"chapter_1/lecture_12.md","ref":"chapter_1/lecture_12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_13.md","mtime":"2018-04-18T04:17:58.790Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-18T04:19:09.434Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Lecture 13 - Pulling Back Partitions","level":"2.13","depth":1,"next":{"title":"Lecture 14 - Adjoints, Joins, and Meets","level":"2.14","depth":1,"path":"chapter_1/lecture_14.md","ref":"chapter_1/lecture_14.md","articles":[]},"previous":{"title":"Lecture 12 - Generative Effects","level":"2.12","depth":1,"path":"chapter_1/lecture_12.md","ref":"chapter_1/lecture_12.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"mathjax":{"forceSVG":false,"version":"2.6-latest"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"John Baez","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Applied Category Theory","gitbook":"*"},"file":{"path":"chapter_1/lecture_13.md","mtime":"2018-04-18T04:25:36.178Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-18T04:26:45.031Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
