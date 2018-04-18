@@ -102,8 +102,8 @@ Using this, you can easily work out the poset of partitions of a
 
 <center><img src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_hasse_diagram.png"></center>
 
-It looks simple. But that's deceptive! For a 4-element set we get
-this poset of partitions:
+It looks simple. But that's deceptive! For a 4-element set we get this
+poset of partitions:
 
 <center><img width = "400" src = "http://math.ucr.edu/home/baez/mathematical/7_sketches/partitions_of_4.png"></center>
 
@@ -127,7 +127,7 @@ Another example: poset of subsets looks the same when you flip it
 upside down. That's because any subset \\(S \subseteq X\\) has a
 **complement**
 
-\\[X - S = \{x \in X : \; x \notin S \}.\\]
+\\[X - S = \\{x \in X : \; x \notin S \\} .\\]
 
 In the logic of subsets this gives **negation**: if a subset \\(S
 \subseteq X\\) corresponds to some proposition \\(P\\), its complement
@@ -147,8 +147,9 @@ than classical logic. To read more about it, go here:
 
 Partition logic still has joins and meets, so I'll talk about those
 next time. We should also see how a function \\(f : X \to Y\\) gives a
-monotone function $$f^* : \mathcal{E}(Y) \to \mathcal{E}(X)$$. And
-we should see if \\(f^*\\) has left or right adjoints!
+monotone function \\(f^\ast : \mathcal{E}(Y) \to
+\mathcal{E}(X)\\). And we should see if \\(f^\ast\\) has left or right
+adjoints!
 
 This leads up to the punchline of Chapter 1: the idea of "generative
 effects". In a nutshell, partition logic has "generative effects"
