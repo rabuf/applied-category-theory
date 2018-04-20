@@ -51,16 +51,19 @@ example from the book:
 <center><img src =
 "http://math.ucr.edu/home/baez/mathematical/7_sketches/partition_pullback.png"></center>
 
-Any part \\(S\\) of \\(P\\) gives a part of \\(f^{\ast}(P)\\): the set
-of all elements of \\(X\\) that map to \\(S\\). This set is just the
-**preimage** of \\(S\\) under \\(f\\), which we met in [Lecture
-9](lecture_9.md). We called it
+For any part \\(S\\) of \\(P\\) we can form the set of all elements of
+\\(X\\) that map to \\(S\\). This set is just the **preimage** of
+\\(S\\) under \\(f\\), which we met in [Lecture 9](lecture_9.md). We
+called it
 
 \\[ f^{\ast}(S) = \\{x \in X: \; f(x) \in S \\}. \\]
 
+As long as this set is nonempty, we include it our partition
+\\(f^{\ast}(P)\\).
+
 So beware: we are now using the symbol \\(f^{\ast}\\) in two ways: for
 the preimage of a subset and for the pullback of a partition. But
-these two ways fit together very nicely, so it'll be okay.
+these two ways fit together quite nicely, so it'll be okay.
 
 Summarizing:
 
@@ -68,7 +71,8 @@ Summarizing:
 \\(P\\) of \\(Y\\), define the **pullback** of \\(P\\) along \\(f\\)
 to be this partition of \\(X\\):
 
-\\[ f^{\ast}(P) = \\{ f^{\ast}(S) : \; S \in P \\} . \\]
+\\[ f^{\ast}(P) = \\{ f^{\ast}(S) : \; S \in P \text{ and } f^{\ast}(S)
+\ne \emptyset \\} . \\]
 
 **Puzzle 40.** Show that \\( f^{\ast}(P) \\) really is a partition
 using the fact that \\(P\\) is. It's fun to prove this using
