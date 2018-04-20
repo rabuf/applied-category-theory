@@ -105,7 +105,7 @@ f_{!}(T) .$$</center>
 But here's the cool part:
 
 **Theorem.** \\(f_{!}: P(X) \to P(Y)\\) is the left adjoint of
-\\(f^{\ast}: P(X) \to P(Y)\\).
+\\(f^{\ast}: P(Y) \to P(X)\\).
 
 **Proof.** We need to show that for any \\(S \subseteq X\\) and \\(T
 \subseteq Y\\) we have
